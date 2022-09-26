@@ -7,14 +7,14 @@ import TickIcon from "../../assets/TickIcon.js";
 
 export const MainSection1 = () => {
   return (
-    <section className="flex flex-col items-center py-32 font-medium">
-      <div className="flex items-center font-medium gap-12 justify-center">
-        <div className="flex flex-col w-1/2 gap-8">
-          <div className="flex gap-2 flex-col w-3/4">
-            <h1 className="font-heading text-8xl tracking-tight leading-tight">
+    <section className="flex flex-col items-center py-32 px-40 2xl:px-60 font-medium ">
+      <div className="flex items-center font-medium justify-between w-full ">
+        <div className="flex flex-col gap-8 w-1/2">
+          <div className="flex xl:gap-6 2xl:gap-2 flex-col">
+            <h1 className="font-heading xl:text-7xl 2xl:text-8xl tracking-tight leading-tight">
               Banking<br></br> starts here.
             </h1>
-            <p className="text-2xl leading-relaxed">
+            <p className="xl:text-xl 2xl:text-2xl leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore.
             </p>
@@ -55,7 +55,7 @@ export const MainSection1 = () => {
             <ButtonTextM>Compare Cards</ButtonTextM>
           </div>
         </div>
-        <div className="flex flex-col ">
+        <div className="flex flex-col  w-80 2xl:h-full 2xl:w-auto">
           <Image src={cardsDemo} alt="CardsMain" />
         </div>
       </div>

@@ -9,8 +9,8 @@ import ChartIcon from "../../assets/ChartIcon";
 
 export const MainSection2 = () => {
   return (
-    <section className="flex flex-col items-center py-32 font-medium ">
-      <div className="flex items-start gap-28">
+    <section className="flex flex-col items-center justify-center py-32 font-medium px-40 2xl:px-60 ">
+      <div className="flex items-start justify-between w-full ">
         <div className="flex flex-col gap-16">
           <h2 className="font-heading text-6xl tracking-tight leading-tight">
             One app.<br></br> One banking.
