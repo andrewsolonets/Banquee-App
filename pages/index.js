@@ -1,77 +1,54 @@
 import Image from "next/image";
-import cardsDemo from "../assets/cardsmain.png";
-import tickSvg from "../assets/badgetick.svg";
+import TickIcon from "../assets/TickIcon";
+import { BadgeS } from "../components/Badge";
+
+import { Header } from "../components/Header";
+import { TransactionCard } from "../components/transactionCard";
+
+import { MainSection1 } from "./MainPage/MainSection1";
+import { MainSection2 } from "./MainPage/MainSection2";
 
 export default function Home() {
   return (
     <>
-      <header className="flex justify-between px-12 py-3 items-center font-medium">
-        <div>
-          <h3 className="font-heading font-bold text-primary text-2xl tracking-tight">
-            banquee.
-          </h3>
-        </div>
-        <nav className="flex ">
-          <ul className="flex gap-4 text-black-txt ">
-            <li>Features</li>
-            <li>Compare</li>
-            <li>Support</li>
-            <li>Blog</li>
-          </ul>
-        </nav>
-        <div className="flex items-center gap-7 justify-end font-heading ">
-          <a href="#" className="text-primary tracking-tight text-lg">
-            Login
-          </a>
-          <button className="px-4 py-2 bg-primary text-white rounded-md">
-            Open Account
-          </button>
-        </div>
-      </header>
-      <section className="flex flex-col items-center py-32 font-medium  ">
-        <div className="flex items-center font-medium gap-12 justify-center">
-          <div className="flex flex-col w-1/2 gap-8">
-            <div className="flex gap-2 flex-col w-3/4">
-              <h1 className="font-heading text-8xl tracking-tight leading-tight">
-                Banking<br></br> starts here.
-              </h1>
-              <p className="text-2xl leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore.
-              </p>
-            </div>
+      <Header />
+      <MainSection1 />
+      <MainSection2 />
+      <section className="flex py-32 bg-primary-light isolate px-60 font-medium">
+        <div className="flex flex-col max-w-xl gap-8">
+          <div className="flex flex-col gap-4 ">
+            <h2 className="font-heading text-6xl tracking-tight leading-tight">
+              Send & receive <br></br> money instantly
+            </h2>
+            <p className="text-xl leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br></br>{" "}
+              sed do eiusmod tempor incididunt ut labore et.
+            </p>
+          </div>
 
-            <div className="flex gap-5 text-lg gap-20">
-              <div className="flex flex-col gap-4 ">
-                <div className="flex items-center gap-4">
-                  <Image src={tickSvg} alt="tick" />
-                  <span>Instant Transfer</span>
-                </div>
-                <div className="flex items-center gap-4 ">
-                  <Image src={tickSvg} alt="tick" />
-                  <span>Saving accounts</span>
-                </div>
-              </div>
-              <div className="flex flex-col gap-4">
-                <div className="flex items-center gap-4">
-                  <Image src={tickSvg} alt="tick" />
-                  <span>Payments worldwide</span>
-                </div>
-                <div className="flex items-center gap-4">
-                  <Image src={tickSvg} alt="tick" />
-                  <span>100% mobile banking</span>
-                </div>
-              </div>
+          <div className="flex flex-col gap-3">
+            <div className="flex items-center gap-4 text-xl">
+              <BadgeS bg="bg-primary">
+                <TickIcon className="w-5 fill-white" />
+              </BadgeS>
+              <span>Malesuada Ipsum</span>
             </div>
-            <div className="flex">
-              <button className="px-6 py-4 bg-primary text-white rounded-md">
-                Open Account
-              </button>
+            <div className="flex items-center gap-4 text-xl">
+              <BadgeS bg="bg-primary">
+                <TickIcon className="w-5 fill-white" />
+              </BadgeS>
+              <span>Vestibulum</span>
+            </div>
+            <div className="flex items-center gap-4 text-xl">
+              <BadgeS bg="bg-primary">
+                <TickIcon className="w-5 fill-white" />
+              </BadgeS>
+              <span>Parturient Lorem</span>
             </div>
           </div>
-          <div className="flex flex-col ">
-            <Image src={cardsDemo} alt="CardsMain" />
-          </div>
+        </div>
+        <div>
+          <TransactionCard />
         </div>
       </section>
     </>
