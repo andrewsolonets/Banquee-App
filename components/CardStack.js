@@ -1,6 +1,8 @@
 import CardImage from "../assets/Card";
 import Card1 from "../assets/Card1";
+import Card1Rotated from "../assets/Card1Rotated";
 import Card2 from "../assets/Card2";
+import CardRotated from "../assets/CardRotated";
 
 export const CardStack = () => {
   return (
@@ -19,13 +21,13 @@ export const CardStack = () => {
 };
 export const CardsMain = () => {
   return (
-    <div className="relative flex h-[36rem] w-[25rem] items-center justify-end">
-      <div className="absolute rotate-[102deg] xl:top-20 xl:left-10 2xl:top-12 2xl:-left-12">
-        <CardImage className=" xl:w-[25rem] 2xl:w-[31.25rem]" />
+    <div className="relative flex h-[36rem] w-[25rem] items-center xl:justify-center 2xl:justify-start">
+      <div className="absolute rotate-[12deg] xl:-top-12 xl:left-28 2xl:-top-8 2xl:left-12">
+        <CardRotated className=" xl:w-[17rem] 2xl:w-[18.75rem]" />
       </div>
 
-      <div className="absolute rotate-90">
-        <Card1 className=" xl:w-[25rem] 2xl:w-[31.25rem]" />
+      <div className="absolute">
+        <Card1Rotated className=" xl:w-[17rem] 2xl:w-[18.75rem]" />
       </div>
     </div>
   );

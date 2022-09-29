@@ -8,12 +8,12 @@ import { Card } from "../../components/Card";
 
 export const CardsFeatures = () => {
   return (
-    <div className=" flex  justify-center gap-16 ">
-      <Card2Rotated />
-      <Card1Rotated />
-      <CardRotated />
-      <Card1Rotated />
-      <Card2Rotated />
+    <div className="absolute -bottom-[22rem] flex  h-[692px] justify-center gap-16">
+      <Card2Rotated className="self-end xl:w-[17rem] 2xl:w-[18.75rem] " />
+      <Card1Rotated className="self-center xl:w-[17rem] 2xl:w-[18.75rem]" />
+      <CardRotated className="xl:w-[17rem] 2xl:w-[18.75rem]" />
+      <Card1Rotated className="self-center xl:w-[17rem] 2xl:w-[18.75rem]" />
+      <Card2Rotated className="self-end xl:w-[17rem] 2xl:w-[18.75rem]" />
     </div>
   );
 };
