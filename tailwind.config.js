@@ -11,7 +11,7 @@ module.exports = {
       current: "currentColor",
       white: {
         bgMuted: "#F8F8F8",
-        DEFAULT: "#FFFFFF",
+        DEFAULT: "rgb(255 255 255 / <alpha-value>)",
       },
       primary: {
         light: "#E8F2EE",

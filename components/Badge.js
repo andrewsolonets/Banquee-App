@@ -1,13 +1,23 @@
 export const BadgeL = ({ children }) => {
   return (
-    <div className="p-2.5 bg-primary-light rounded-full w-fit">{children}</div>
+    <div className="w-fit rounded-full bg-primary-light p-2.5">{children}</div>
   );
 };
 
 export const BadgeS = ({ children, bg = "bg-primary-light" }) => {
-  return <div className={`p-1 ${bg} rounded-full w-fit`}>{children}</div>;
+  return <div className={`p-1 ${bg} w-fit rounded-full`}>{children}</div>;
 };
 
 export const BadgeTrans = ({ children }) => {
-  return <div className="p-3 w-fit rounded-lg bg-primary">{children}</div>;
+  return <div className="w-fit rounded-lg bg-primary p-3">{children}</div>;
+};
+
+export const BadgeCompany = ({ children, bg = "bg-white-bgMuted" }) => {
+  return (
+    <div
+      className={`p-4 ${bg} flex h-16 w-fit items-center justify-center rounded-xl `}
+    >
+      {children}
+    </div>
+  );
 };

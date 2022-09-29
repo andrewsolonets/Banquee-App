@@ -1,17 +1,14 @@
-import AmazonIcon from "../../assets/AmazonIcon";
-import AppleIcon from "../../assets/Apple";
-import FacebookIcon from "../../assets/FacebookIcon";
 import TickIcon from "../../assets/TickIcon";
-import TwitterIcon from "../../assets/TwitterIcon";
 import { BadgeS } from "../../components/Badge";
 import { TransactionCard } from "../../components/TransactionCard";
+import { transactions } from "../../utils/content";
 
 export const MainSection3 = () => {
   return (
-    <section className="flex py-32 px-40 2xl:px-60 bg-primary-light isolate items-center justify-between gap-44 font-medium overflow-hidden">
-      <div className="relative flex flex-col max-w-xl gap-8">
+    <section className="isolate flex items-center justify-between gap-44 overflow-hidden bg-primary-light py-32 px-40 font-medium text-black-txt 2xl:px-60">
+      <div className="relative flex max-w-xl flex-col gap-8">
         <div className="flex flex-col gap-4 ">
-          <h2 className="font-heading text-6xl tracking-tight leading-tight">
+          <h2 className="font-heading text-6xl leading-tight tracking-tight">
             Send & receive <br></br> money instantly
           </h2>
           <p className="text-xl leading-relaxed">
@@ -41,43 +38,16 @@ export const MainSection3 = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-4 max-h-96 ">
-        <TransactionCard
-          icon={<AppleIcon className="w-6 fill-white" />}
-          heading={"Apple"}
-          descr={"Macbook"}
-          price={"-999€"}
-        />
-        <TransactionCard
-          icon={<AmazonIcon className="w-6 fill-white" />}
-          heading={"Amazon"}
-          descr={"Electronics"}
-          price={"-49€"}
-        />
-        <TransactionCard
-          icon={<FacebookIcon className="w-6 fill-white" />}
-          heading={"Facebook"}
-          descr={"Ads"}
-          price={"-29€"}
-        />
-        <TransactionCard
-          icon={<TwitterIcon className="w-6 fill-white" />}
-          heading={"Twitter"}
-          descr={"Ads"}
-          price={"-149€"}
-        />
-        <TransactionCard
-          icon={<AppleIcon className="w-6 fill-white" />}
-          heading={"Apple"}
-          descr={"Cable"}
-          price={"-14€"}
-        />
-        <TransactionCard
-          icon={<AppleIcon className="w-6 fill-white" />}
-          heading={"Apple"}
-          descr={"Macbook"}
-          price={"-250€"}
-        />
+      <div className="flex max-h-96 flex-col gap-4 ">
+        {transactions.map((el, i) => (
+          <TransactionCard
+            icon={el.icon}
+            heading={el.heading}
+            descr={el.descr}
+            price={el.price}
+            key={i}
+          />
+        ))}
       </div>
     </section>
   );
