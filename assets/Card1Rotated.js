@@ -1,10 +1,8 @@
-import * as React from "react"
+import * as React from "react";
 
 function Card1Rotated(props) {
   return (
     <svg
-      width={300}
-      height={500}
       viewBox="0 0 300 500"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +97,7 @@ function Card1Rotated(props) {
         />
       </defs>
     </svg>
-  )
+  );
 }
 
-export default Card1Rotated
+export default Card1Rotated;

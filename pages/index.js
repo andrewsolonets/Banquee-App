@@ -1,10 +1,11 @@
+import { Cta } from "../components/CTA";
+import { Faq } from "../components/Faq";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 
 import SizeObserver from "../utils/size-observer";
 import { Blog } from "./MainPage/Blog";
-import { Cta } from "./MainPage/CTA";
-import { Faq } from "./MainPage/Faq";
+
 import { Integration } from "./MainPage/Integration";
 
 import { MainSection1 } from "./MainPage/MainSection1";

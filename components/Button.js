@@ -1,9 +1,9 @@
 import ArrowRight from "../assets/ArrowRight";
 
-export const ButtonS = ({ children, bgColor = "bg-primary" }) => {
+export const ButtonS = ({ children, bgColor = "bg-primary", special }) => {
   return (
     <button
-      className={`px-4 py-2 ${bgColor} box-border rounded-md font-heading tracking-tight  text-white`}
+      className={`px-4 py-2 ${bgColor} box-border rounded-md font-heading tracking-tight ${special} text-white`}
     >
       {children}
     </button>

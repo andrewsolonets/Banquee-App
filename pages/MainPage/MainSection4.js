@@ -5,6 +5,7 @@ import LaptopIcon from "../../assets/Laptop";
 import PlusIcon from "../../assets/PlusIcon";
 import { ButtonTextM } from "../../components/Button";
 import { Card2 } from "../../components/Card";
+import { ShoppingItems } from "../../components/ShoppingItems";
 
 export const MainSection4 = () => {
   return (
@@ -25,37 +26,7 @@ export const MainSection4 = () => {
           </div>
           <ButtonTextM>All Features</ButtonTextM>
         </div>
-        <div className="flex w-full justify-between">
-          <Card2
-            icon={<LaptopIcon />}
-            bg={"bg-primary-light"}
-            heading={"New Laptop"}
-            price={"400$"}
-          />
-          <Card2
-            icon={<BicycleIcon />}
-            bg={"bg-[#F1DFDF]"}
-            heading={"Dream bike"}
-            price={"200$"}
-          />
-          <Card2
-            icon={<AirplaneIcon />}
-            bg={"bg-[#DFE1F1]"}
-            heading={"Holiday"}
-            price={"14000$"}
-          />
-          <Card2
-            icon={<CameraIcon />}
-            bg={"bg-[#DFEBF1]"}
-            heading={"Camera"}
-            price={"100$"}
-          />
-          <div
-            className={`flex h-44 w-44 items-center justify-center rounded-2xl bg-white-bgMuted 2xl:h-52 2xl:w-52`}
-          >
-            <PlusIcon />
-          </div>
-        </div>
+        <ShoppingItems />
       </div>
     </section>
   );

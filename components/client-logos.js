@@ -13,10 +13,14 @@ import SliderContainer, { SliderItem } from "./slider";
 import WebFlowIcon from "../assets/WebflowIcon";
 import BitCoinIcon from "../assets/BitcoinIcon";
 
-const ClientLogos = () => {
+const ClientLogos = ({ width = 2000, offset1 = 0, offset2 = 70 }) => {
   return (
     <>
-      <SliderContainer className="" contentWidth={2000} initialOffsetX={0}>
+      <SliderContainer
+        className=""
+        contentWidth={width}
+        initialOffsetX={offset1}
+      >
         <SliderItem>
           <BadgeCompany>
             <ShopifyIcon />
@@ -63,7 +67,11 @@ const ClientLogos = () => {
           </BadgeCompany>
         </SliderItem>
       </SliderContainer>
-      <SliderContainer className="" contentWidth={2000} initialOffsetX={70}>
+      <SliderContainer
+        className=""
+        contentWidth={width}
+        initialOffsetX={offset2}
+      >
         <SliderItem>
           <BadgeCompany>
             <AmazonPayIcon />
@@ -116,3 +124,52 @@ const ClientLogos = () => {
 };
 
 export default ClientLogos;
+
+export const LogosSmall = () => {
+  return (
+    <div className="flex flex-col items-center gap-2">
+      <div className="flex gap-2">
+        {" "}
+        <BadgeCompany bg="bg-white">
+          <ShopifyIcon />
+        </BadgeCompany>
+        <BadgeCompany bg="bg-white">
+          <ApplePayIcon />
+        </BadgeCompany>
+        <BadgeCompany bg="bg-white">
+          <PayPalIcon />
+        </BadgeCompany>
+      </div>
+      <div className="flex gap-2">
+        {" "}
+        <BadgeCompany bg="bg-white">
+          <VisaIcon />
+        </BadgeCompany>
+        <BadgeCompany bg="bg-white">
+          <GooglePayIcon />
+        </BadgeCompany>
+        <BadgeCompany bg="bg-white">
+          <VisaIcon />
+        </BadgeCompany>
+        <BadgeCompany bg="bg-white">
+          <MasterCardIcon />
+        </BadgeCompany>
+        <BadgeCompany bg="bg-white">
+          <VisaIcon />
+        </BadgeCompany>
+      </div>
+      <div className="flex gap-2">
+        {" "}
+        <BadgeCompany bg="bg-white">
+          <ZapierIcon />
+        </BadgeCompany>
+        <BadgeCompany bg="bg-white">
+          <AmazonPayIcon />
+        </BadgeCompany>
+        <BadgeCompany bg="bg-white">
+          <BitCoinIcon />
+        </BadgeCompany>
+      </div>
+    </div>
+  );
+};

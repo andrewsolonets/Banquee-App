@@ -1,9 +1,9 @@
-import EmailIcon from "../../assets/email";
-import PhoneIcon from "../../assets/PhoneIcon";
-import { Accordion } from "../../components/Accordion";
-import { BadgeL } from "../../components/Badge";
-import { ButtonTextM } from "../../components/Button";
-import { faqContent } from "../../utils/content";
+import EmailIcon from "../assets/email";
+import PhoneIcon from "../assets/PhoneIcon";
+import { Accordion } from "./Accordion";
+import { BadgeL } from "./Badge";
+import { ButtonTextM } from "./Button";
+import { faqContent } from "../utils/content";
 
 export const Faq = () => {
   return (
@@ -18,7 +18,7 @@ export const Faq = () => {
               <PhoneIcon className="w-7 fill-primary" />
             </BadgeL>
             <div className="flex flex-col items-start">
-              <h6 className="font-heading text-xl font-bold ">
+              <h6 className="font-heading text-lg font-bold ">
                 +49 176 123 456
               </h6>
               <p className="text-sm text-black-txt/50">Support Hotline</p>
@@ -29,7 +29,7 @@ export const Faq = () => {
               <EmailIcon className="w-7 fill-primary" />
             </BadgeL>
             <div className="flex flex-col items-start">
-              <h6 className="font-heading text-xl font-bold ">help@bank.com</h6>
+              <h6 className="font-heading text-lg font-bold ">help@bank.com</h6>
               <p className="text-sm text-black-txt/50">Support Email</p>
             </div>
           </div>

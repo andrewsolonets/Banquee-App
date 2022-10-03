@@ -1,9 +1,9 @@
 import Image from "next/image";
-import TickIcon from "../../assets/TickIcon";
-import { BadgeS } from "../../components/Badge";
-import screen1 from "../../assets/app1.png";
-import GstoreIcon from "../../assets/GStoreIcon";
-import AppleStoreIcon from "../../assets/AppleStoreIcon";
+import TickIcon from "../assets/TickIcon";
+import { BadgeS } from "./Badge";
+import screen1 from "../assets/app1.png";
+import GstoreIcon from "../assets/GStoreIcon";
+import AppleStoreIcon from "../assets/AppleStoreIcon";
 
 export const Cta = () => {
   return (

@@ -12,6 +12,9 @@ import WifiIcon from "../assets/WifiIcon";
 import image from "../assets/image.png";
 import image1 from "../assets/image-1.png";
 import image2 from "../assets/image-2.png";
+import { BadgeS } from "../components/Badge";
+import TickIcon from "../assets/TickIcon";
+import VirtualIcon from "../assets/VirtualIcon";
 
 export const pinPoints = [
   { col: 1, text: "Instant Transfer" },
@@ -226,5 +229,52 @@ export const blogPreviews = [
     title: "7 Ways To Improve You Saving Habits",
     txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi.",
     categories: ["Product", "Technology"],
+  },
+];
+
+export const compareTable1 = [
+  {
+    icon: <CardSmall className="w-7 fill-primary" />,
+    heading: "Physical Card",
+    paragraph: "Diam in arcu cursus euismod",
+    row1: "Optional",
+    row2: (
+      <BadgeS>
+        <TickIcon className="w-5 fill-primary" />
+      </BadgeS>
+    ),
+    row3: (
+      <BadgeS>
+        <TickIcon className="w-5 fill-primary" />
+      </BadgeS>
+    ),
+  },
+  {
+    icon: <VirtualIcon className="w-7 fill-primary" />,
+    heading: "Virtual Card",
+    paragraph: "Diam in arcu cursus euismod",
+    row1: "-",
+    row2: "Up to 2",
+    row3: "Unlimited",
+  },
+  {
+    icon: <WifiIcon className="w-7 fill-primary" />,
+    heading: "Virtual Card",
+    paragraph: "Diam in arcu cursus euismod",
+    row1: (
+      <BadgeS>
+        <TickIcon className="w-5 fill-primary" />
+      </BadgeS>
+    ),
+    row2: (
+      <BadgeS>
+        <TickIcon className="w-5 fill-primary" />
+      </BadgeS>
+    ),
+    row3: (
+      <BadgeS>
+        <TickIcon className="w-5 fill-primary" />
+      </BadgeS>
+    ),
   },
 ];

@@ -3,8 +3,6 @@ import * as React from "react";
 function Card2(props) {
   return (
     <svg
-      width={500}
-      height={301}
       viewBox="0 0 500 301"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

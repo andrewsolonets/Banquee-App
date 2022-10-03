@@ -3,8 +3,6 @@ import * as React from "react";
 function CardImage(props) {
   return (
     <svg
-      width={props.rotate ? 300 : 500}
-      height={props.rotate ? 500 : 301}
       viewBox={props.rotate ? "0 0 301 500" : "0 0 500 301"}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

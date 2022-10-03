@@ -1,7 +1,10 @@
 import { ButtonS } from "./Button";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export const Header = () => {
+  const router = useRouter();
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between bg-white px-12 py-3 font-medium">
       <div>
@@ -14,13 +17,23 @@ export const Header = () => {
       <nav className="flex ">
         <ul className="flex gap-4 text-black-txt ">
           <Link href="/features">
-            <li className="cursor-pointer rounded-md px-3 py-2 hover:bg-white-bgMuted ">
+            <li
+              className={`cursor-pointer rounded-md px-3 py-2 hover:bg-white-bgMuted ${
+                router.pathname === "/features" ? "bg-white-bgMuted" : ""
+              }`}
+            >
               Features
             </li>
           </Link>
-          <li className="cursor-pointer rounded-md px-3 py-2 hover:bg-white-bgMuted ">
-            Compare
-          </li>
+          <Link href="/compare">
+            <li
+              className={`cursor-pointer rounded-md px-3 py-2 hover:bg-white-bgMuted ${
+                router.pathname === "/compare" ? "bg-white-bgMuted" : ""
+              }`}
+            >
+              Compare
+            </li>
+          </Link>
           <li className="cursor-pointer rounded-md px-3 py-2 hover:bg-white-bgMuted ">
             Support
           </li>
