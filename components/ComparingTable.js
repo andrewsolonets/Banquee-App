@@ -5,14 +5,14 @@ import { compareTable1 } from "../utils/content";
 import { BadgeL, BadgeS } from "./Badge";
 import { TableRow } from "./TableRow";
 
-export const ComparingTable = ({ heading }) => {
+export const ComparingTable = ({ heading, data }) => {
   return (
-    <div className="flex w-full flex-col items-start justify-start gap-8">
+    <div className="flex w-full flex-col items-start justify-start gap-4">
       <h5 className="font-heading text-xl leading-tight tracking-tight">
-        Credit Card
+        {heading}
       </h5>
       <div className="flex w-full flex-col gap-0">
-        {compareTable1.map((el, i) => (
+        {data.map((el, i) => (
           <TableRow
             icon={el.icon}
             heading={el.heading}

@@ -15,6 +15,10 @@ import image2 from "../assets/image-2.png";
 import { BadgeS } from "../components/Badge";
 import TickIcon from "../assets/TickIcon";
 import VirtualIcon from "../assets/VirtualIcon";
+import MoneyEuro from "../assets/MoneyEuro";
+import WorldWide from "../assets/WorldWide";
+import BankIcon from "../assets/BankIcon";
+import PremiumIcon from "../assets/PremiumIcon";
 
 export const pinPoints = [
   { col: 1, text: "Instant Transfer" },
@@ -259,7 +263,125 @@ export const compareTable1 = [
   },
   {
     icon: <WifiIcon className="w-7 fill-primary" />,
-    heading: "Virtual Card",
+    heading: "Contactless Payments",
+    paragraph: "Diam in arcu cursus euismod",
+    row1: (
+      <BadgeS>
+        <TickIcon className="w-5 fill-primary" />
+      </BadgeS>
+    ),
+    row2: (
+      <BadgeS>
+        <TickIcon className="w-5 fill-primary" />
+      </BadgeS>
+    ),
+    row3: (
+      <BadgeS>
+        <TickIcon className="w-5 fill-primary" />
+      </BadgeS>
+    ),
+  },
+  {
+    icon: <MoneyEuro className="w-7 fill-primary" />,
+    heading: "Mobile Payments",
+    paragraph: "Diam in arcu cursus euismod",
+    row1: (
+      <BadgeS>
+        <TickIcon className="w-5 fill-primary" />
+      </BadgeS>
+    ),
+    row2: (
+      <BadgeS>
+        <TickIcon className="w-5 fill-primary" />
+      </BadgeS>
+    ),
+    row3: (
+      <BadgeS>
+        <TickIcon className="w-5 fill-primary" />
+      </BadgeS>
+    ),
+  },
+];
+
+export const compareTable2 = [
+  {
+    icon: <WorldWide className="w-7 fill-primary" />,
+    heading: "Free Payments Worldwide",
+    paragraph: "Diam in arcu cursus euismod",
+    row1: "-",
+    row2: (
+      <BadgeS>
+        <TickIcon className="w-5 fill-primary" />
+      </BadgeS>
+    ),
+    row3: (
+      <BadgeS>
+        <TickIcon className="w-5 fill-primary" />
+      </BadgeS>
+    ),
+  },
+  {
+    icon: <BankIcon className="w-7 fill-primary" />,
+    heading: "Free ATM withdrawls",
+    paragraph: "Diam in arcu cursus euismod",
+    row1: "2",
+    row2: "5",
+    row3: "10",
+  },
+  {
+    icon: <SmartPhone className="w-7 fill-primary" />,
+    heading: "Mobile Banking",
+    paragraph: "Diam in arcu cursus euismod",
+    row1: (
+      <BadgeS>
+        <TickIcon className="w-5 fill-primary" />
+      </BadgeS>
+    ),
+    row2: (
+      <BadgeS>
+        <TickIcon className="w-5 fill-primary" />
+      </BadgeS>
+    ),
+    row3: (
+      <BadgeS>
+        <TickIcon className="w-5 fill-primary" />
+      </BadgeS>
+    ),
+  },
+];
+
+export const compareTable3 = [
+  {
+    icon: <SafeIcon className="w-7 fill-primary" />,
+    heading: "Saving Accounts",
+    paragraph: "Diam in arcu cursus euismod",
+    row1: "2",
+    row2: "5",
+    row3: "Unlimited",
+  },
+  {
+    icon: <ChartIcon className="w-7 fill-primary" />,
+    heading: "Advanced Statistics",
+    paragraph: "Diam in arcu cursus euismod",
+    row1: (
+      <BadgeS>
+        <TickIcon className="w-5 fill-primary" />
+      </BadgeS>
+    ),
+    row2: (
+      <BadgeS>
+        <TickIcon className="w-5 fill-primary" />
+      </BadgeS>
+    ),
+    row3: (
+      <BadgeS>
+        <TickIcon className="w-5 fill-primary" />
+      </BadgeS>
+    ),
+  },
+  {
+    icon: <PremiumIcon className="w-7 fill-primary" />,
+    heading: "Premium Parnter Offers",
     paragraph: "Diam in arcu cursus euismod",
     row1: (
       <BadgeS>

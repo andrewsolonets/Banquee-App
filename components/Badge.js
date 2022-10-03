@@ -1,7 +1,5 @@
-export const BadgeL = ({ children }) => {
-  return (
-    <div className="w-fit rounded-full bg-primary-light p-2.5">{children}</div>
-  );
+export const BadgeL = ({ children, bg = "bg-primary-light" }) => {
+  return <div className={`w-fit rounded-full ${bg} p-2.5`}>{children}</div>;
 };
 
 export const BadgeS = ({ children, bg = "bg-primary-light" }) => {

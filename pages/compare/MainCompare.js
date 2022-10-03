@@ -3,6 +3,11 @@ import Card1 from "../../assets/Card1";
 import Card2 from "../../assets/Card2";
 import { ChooseCardItem } from "../../components/ChooseCardItem";
 import { ComparingTable } from "../../components/ComparingTable";
+import {
+  compareTable1,
+  compareTable2,
+  compareTable3,
+} from "../../utils/content";
 
 export const MainCompare = () => {
   return (
@@ -34,7 +39,9 @@ export const MainCompare = () => {
           descr={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
         />
       </div>
-      <ComparingTable heading={"Credit Cards"} />
+      <ComparingTable heading={"Credit Cards"} data={compareTable1} />
+      <ComparingTable heading={"Bank Account"} data={compareTable2} />
+      <ComparingTable heading={"Extra Features"} data={compareTable3} />
     </div>
   );
 };
