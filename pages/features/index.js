@@ -1,12 +1,16 @@
 import { Hero } from "./Hero";
-import { Tile1 } from "./Tile1";
+import { Feature, Tile1 } from "./Feature";
+
+import FeaturesList from "./FeaturesList";
+import { AllInOneBank } from "./AllInOne";
 
 const Features = () => {
   return (
     <div>
       <Hero />
-      <div className="px-40 py-40 2xl:px-60">
-        <Tile1 />
+      <div className=" px-8 pb-40  lg:px-40 lg:pt-40 2xl:px-60">
+        <FeaturesList />
+        <AllInOneBank />
       </div>
     </div>
   );

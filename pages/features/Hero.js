@@ -6,7 +6,7 @@ export const Hero = () => {
     <section className="relative flex flex-col items-center gap-32 overflow-hidden bg-primary-light pt-32 pb-[28rem]">
       <div className="flex flex-col items-center gap-8">
         <div className="flex flex-col items-center justify-center gap-4">
-          <div className="flex flex-col items-center justify-center xl:gap-6 2xl:gap-2">
+          <div className="flex flex-col items-center justify-center text-6xl xl:gap-6 2xl:gap-2">
             <p className="text-xl">Features</p>
             <h1 className="font-heading leading-tight tracking-tight xl:text-7xl">
               All in one card.

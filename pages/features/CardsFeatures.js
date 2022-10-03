@@ -17,3 +17,15 @@ export const CardsFeatures = () => {
     </div>
   );
 };
+
+export const CardsFeatures2 = () => {
+  return (
+    <>
+      <Card2Rotated className="self-end xl:w-[17rem] 2xl:w-[18.75rem] " />
+      <Card1Rotated className="self-center xl:w-[17rem] 2xl:w-[18.75rem]" />
+      <CardRotated className="xl:w-[17rem] 2xl:w-[18.75rem]" />
+      <Card1Rotated className="self-center xl:w-[17rem] 2xl:w-[18.75rem]" />
+      <Card2Rotated className="self-end xl:w-[17rem] 2xl:w-[18.75rem]" />
+    </>
+  );
+};

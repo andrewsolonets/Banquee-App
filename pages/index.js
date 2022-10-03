@@ -19,21 +19,17 @@ import { Reviews } from "./MainPage/Reviews";
 export default function Home() {
   return (
     <>
-      <SizeObserver>
-        <Header />
-        <MainSection1 />
-        <MainSection2 />
-        <MainSection3 />
-        <MainSection4 />
-        <Notifications />
-        <Integration />
-        <PerfectCard />
-        <Reviews />
-        <Cta />
-        <Faq />
-        <Blog />
-        <Footer />
-      </SizeObserver>
+      <MainSection1 />
+      <MainSection2 />
+      <MainSection3 />
+      <MainSection4 />
+      <Notifications />
+      <Integration />
+      <PerfectCard />
+      <Reviews />
+      <Cta />
+      <Faq />
+      <Blog />
     </>
   );
 }
