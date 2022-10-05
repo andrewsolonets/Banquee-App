@@ -4,7 +4,7 @@ import ClientLogos from "../../components/client-logos";
 
 export const Integration = () => {
   return (
-    <section className="flex flex-col items-center gap-16 overflow-hidden border-b border-grey px-40 py-40 font-medium 2xl:px-60">
+    <section className="flex flex-col items-center gap-16 overflow-hidden  py-40 font-medium ">
       <div className="flex w-full flex-col gap-4 overflow-hidden">
         <ClientLogos />
       </div>

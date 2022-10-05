@@ -7,7 +7,7 @@ import { notifications } from "../../utils/content";
 
 export const Notifications = () => {
   return (
-    <section className="flex items-center justify-between gap-44 overflow-hidden px-40 pt-40 font-medium text-black-txt 2xl:px-60">
+    <section className="flex items-center justify-between gap-44 overflow-hidden  pt-40 font-medium text-black-txt ">
       <div className="relative flex w-1/2 max-w-xl flex-col gap-8 ">
         <div className="flex flex-col items-start gap-4 ">
           <h5 className="font-heading text-xl tracking-tight">Notifications</h5>

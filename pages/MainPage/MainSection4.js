@@ -9,7 +9,7 @@ import { ShoppingItems } from "../../components/ShoppingItems";
 
 export const MainSection4 = () => {
   return (
-    <section className="flex flex-col items-center px-40 pt-40 font-medium text-black-txt 2xl:px-60">
+    <section className="flex flex-col items-center pt-40 font-medium text-black-txt ">
       <div className="flex flex-col items-start gap-16 ">
         <div className="flex items-end justify-between">
           <div className="flex w-1/2 flex-col items-start gap-4">

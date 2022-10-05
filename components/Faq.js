@@ -7,7 +7,7 @@ import { faqContent } from "../utils/content";
 
 export const Faq = () => {
   return (
-    <section className="flex items-start justify-between px-40 py-40 text-black-txt 2xl:px-60">
+    <section className="flex items-start justify-between py-40 text-black-txt ">
       <div className="flex flex-col gap-12">
         <h2 className="font-heading text-6xl leading-tight tracking-tight">
           Need help?

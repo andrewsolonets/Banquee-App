@@ -6,15 +6,15 @@ export const Header = () => {
   const router = useRouter();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between bg-white px-12 py-3 font-medium">
+    <header className="fixed top-0 left-0 right-0 z-50 flex w-full items-center justify-between bg-white px-6 py-3 font-medium md:px-12">
       <div>
         <Link href="/">
-          <h3 className="cursor-pointer font-heading text-2xl font-bold tracking-tight text-primary">
+          <h3 className="cursor-pointer font-heading text-4xl font-bold tracking-tight text-primary md:text-2xl">
             banquee.
           </h3>
         </Link>
       </div>
-      <nav className="flex ">
+      <nav className="hidden md:flex ">
         <ul className="flex gap-4 text-black-txt ">
           <Link href="/features">
             <li
@@ -34,12 +34,24 @@ export const Header = () => {
               Compare
             </li>
           </Link>
-          <li className="cursor-pointer rounded-md px-3 py-2 hover:bg-white-bgMuted ">
-            Support
-          </li>
-          <li className="cursor-pointer rounded-md px-3 py-2 hover:bg-white-bgMuted ">
-            Blog
-          </li>
+          <Link href="/support">
+            <li
+              className={`cursor-pointer rounded-md px-3 py-2 hover:bg-white-bgMuted ${
+                router.pathname === "/support" ? "bg-white-bgMuted" : ""
+              }`}
+            >
+              Support
+            </li>
+          </Link>
+          <Link href="/blog">
+            <li
+              className={`cursor-pointer rounded-md px-3 py-2 hover:bg-white-bgMuted ${
+                router.pathname === "/blog" ? "bg-white-bgMuted" : ""
+              }`}
+            >
+              Blog
+            </li>
+          </Link>
         </ul>
       </nav>
       <div className="flex items-center justify-end gap-7 font-heading ">

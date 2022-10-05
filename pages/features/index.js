@@ -9,13 +9,13 @@ const Features = () => {
   return (
     <div>
       <Hero />
-      <div className=" px-8 pb-40  lg:px-40 lg:pt-40 2xl:px-60">
+      <div className=" px-8  lg:px-40 lg:pt-40 2xl:px-60">
         <FeaturesList />
         <AllInOneBank />
         <ChooseCards />
+        <Cta />
+        <Faq />
       </div>
-      <Cta />
-      <Faq />
     </div>
   );
 };

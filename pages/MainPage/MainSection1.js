@@ -9,7 +9,7 @@ import { pinPoints } from "../../utils/content";
 
 export const MainSection1 = () => {
   return (
-    <section className="flex flex-col items-center py-20 px-40 pb-32 font-medium text-black-txt 2xl:px-60 ">
+    <section className="flex w-full flex-col items-center py-20 pb-32 font-medium text-black-txt  ">
       <div className="flex w-full items-center justify-between font-medium ">
         <div className="flex w-1/2 flex-col gap-8">
           <div className="flex flex-col xl:gap-6 2xl:gap-2">

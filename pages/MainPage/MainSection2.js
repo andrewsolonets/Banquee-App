@@ -6,7 +6,7 @@ import { cardContent } from "../../utils/content";
 
 export const MainSection2 = () => {
   return (
-    <section className="flex flex-col items-center justify-center py-32 px-40 font-medium text-black-txt 2xl:px-60">
+    <section className="flex flex-col items-center justify-center py-32 font-medium text-black-txt ">
       <div className="flex w-full items-start justify-between ">
         <div className="flex flex-col gap-16">
           <h2 className="font-heading text-6xl leading-tight tracking-tight">

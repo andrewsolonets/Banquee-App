@@ -7,8 +7,8 @@ import AppleStoreIcon from "../assets/AppleStoreIcon";
 
 export const Cta = () => {
   return (
-    <section className="isolate flex items-center justify-between gap-44 overflow-hidden px-40 2xl:px-60 ">
-      <div className="flex gap-16 rounded-3xl bg-primary px-24 py-20">
+    <section className="isolate flex w-full items-center justify-between gap-44 overflow-hidden pt-40  ">
+      <div className="flex w-full gap-16 rounded-3xl bg-primary px-24 py-20">
         <div className="relative flex max-w-xl flex-col gap-8">
           <div className="flex flex-col gap-4 text-white">
             <h2 className="font-heading text-6xl leading-tight tracking-tight">

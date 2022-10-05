@@ -20,17 +20,24 @@ import { Reviews } from "./MainPage/Reviews";
 export default function Home() {
   return (
     <>
-      <MainSection1 />
-      <MainSection2 />
+      <div className=" px-5  md:px-20 lg:px-40 2xl:px-60">
+        <MainSection1 />
+        <MainSection2 />
+      </div>
+
       <MainSection3 />
-      <MainSection4 />
-      <Notifications />
-      <Integration />
-      <PerfectCard />
-      <Reviews />
-      <Cta />
-      <Faq />
-      <Blog />
+      <div className=" border-b  border-grey px-5 md:px-20 lg:px-40 2xl:px-60">
+        <MainSection4 />
+        <Notifications />
+        <Integration />
+      </div>
+      <div className=" border-b  border-grey px-5 md:px-20 lg:px-40 2xl:px-60">
+        <PerfectCard />
+        <Reviews />
+        <Cta />
+        <Faq />
+        <Blog />
+      </div>
     </>
   );
 }

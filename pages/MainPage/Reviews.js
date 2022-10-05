@@ -5,7 +5,7 @@ import { reviewData } from "../../utils/content";
 
 export const Reviews = () => {
   return (
-    <section className="py flex flex-col items-start gap-16 py-32 px-40 font-medium text-black-txt 2xl:px-60">
+    <section className="py flex flex-col items-start gap-16 py-32 font-medium text-black-txt ">
       <div className="flex items-end justify-between">
         <div className="flex w-1/2 flex-col items-start gap-4">
           <h5 className="font-heading text-xl tracking-tight">Testimonials</h5>

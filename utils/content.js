@@ -10,8 +10,12 @@ import SmartPhone from "../assets/SmartPhone";
 import TwitterIcon from "../assets/TwitterIcon";
 import WifiIcon from "../assets/WifiIcon";
 import image from "../assets/image.png";
+import imageBig from "../assets/bigBlog.png";
 import image1 from "../assets/image-1.png";
 import image2 from "../assets/image-2.png";
+import image4 from "../assets/image4.png";
+import image5 from "../assets/image5.png";
+import image6 from "../assets/image6.png";
 import { BadgeS } from "../components/Badge";
 import TickIcon from "../assets/TickIcon";
 import VirtualIcon from "../assets/VirtualIcon";
@@ -19,6 +23,16 @@ import MoneyEuro from "../assets/MoneyEuro";
 import WorldWide from "../assets/WorldWide";
 import BankIcon from "../assets/BankIcon";
 import PremiumIcon from "../assets/PremiumIcon";
+
+const blogPreviewSummary =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi.";
+
+const text1 = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla. Odio morbi quis commodo odio. Et malesuada fames ac turpis egestas sed tempus urna. Mi in nulla posuere sollicitudin aliquam ultrices sagittis orci a. Fringilla ut morbi tincidunt augue interdum. Ultrices in iaculis nunc sed augue lacus viverra. 
+
+  Erat imperdiet sed euismod nisi porta. Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla. Cras sed felis eget velit aliquet sagittis. Amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue. Blandit aliquam etiam erat velit scelerisque in dictum. In hac habitasse platea dictumst vestibulum rhoncus. Molestie ac feugiat sed lectus vestibulum.`;
+
+const text2 =
+  "Sed vulputate odio ut enim blandit volutpat maecenas. Sagittis orci a scelerisque purus semper eget duis at. Porta lorem mollis aliquam ut porttitor leo a diam. In fermentum et sollicitudin ac orci phasellus egestas tellus. Mauris cursus mattis molestie a iaculis at erat pellentesque adipiscing. Nascetur ridiculus mus mauris vitae ultricies. Dui nunc mattis enim ut tellus. Duis convallis convallis tellus id interdum. Quis ipsum suspendisse ultrices gravida dictum fusce. Scelerisque mauris pellentesque pulvinar pellentesque. Tincidunt augue interdum velit euismod. Nibh tortor id aliquet lectus. Amet commodo nulla facilisi nullam. Vulputate ut pharetra sit amet aliquam id diam maecenas. Tellus pellentesque eu tincidunt tortor. Ultrices vitae auctor eu augue ut lectus arcu bibendum.";
 
 export const pinPoints = [
   { col: 1, text: "Instant Transfer" },
@@ -215,23 +229,151 @@ export const faqContent = [
   },
 ];
 
-export const blogPreviews = [
+export const faqContent1 = [
   {
+    title: "How to setup my card?",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi. Eget gravida cum sociis natoque penatibus et magnis dis parturient.",
+  },
+  {
+    title: "How do I create a virtual card?",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi. Eget gravida cum sociis natoque penatibus et magnis dis parturient.",
+  },
+  {
+    title: "How to order an extra card?",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi. Eget gravida cum sociis natoque penatibus et magnis dis parturient.",
+  },
+  {
+    title: "My card will exprise soon. What to do?",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi. Eget gravida cum sociis natoque penatibus et magnis dis parturient.",
+  },
+  {
+    title: "How do I freeze my card?",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi. Eget gravida cum sociis natoque penatibus et magnis dis parturient.",
+  },
+];
+
+export const faqContent2 = [
+  {
+    title: "How do I verify my account?",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi. Eget gravida cum sociis natoque penatibus et magnis dis parturient.",
+  },
+  {
+    title: "How to upgrade my account?",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi. Eget gravida cum sociis natoque penatibus et magnis dis parturient.",
+  },
+  {
+    title: "Can I have multiple accounts?",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi. Eget gravida cum sociis natoque penatibus et magnis dis parturient.",
+  },
+  {
+    title: "How do I cancel my account?",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi. Eget gravida cum sociis natoque penatibus et magnis dis parturient.",
+  },
+];
+
+export const faqContent3 = [
+  {
+    title: "How do I change my account address?",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi. Eget gravida cum sociis natoque penatibus et magnis dis parturient.",
+  },
+  {
+    title: "How to close my account?",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi. Eget gravida cum sociis natoque penatibus et magnis dis parturient.",
+  },
+  {
+    title: "Where do I find my tax ID?",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi. Eget gravida cum sociis natoque penatibus et magnis dis parturient.",
+  },
+  {
+    title: "How can I download my bank documents?",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi. Eget gravida cum sociis natoque penatibus et magnis dis parturient.",
+  },
+];
+
+export const blogPosts = [
+  {
+    id: "0",
     img: image,
     title: "How To Start Using Banko For Your Startup",
-    txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi.",
+    section1Heading: "Et malesuada fames ac turpis",
+    text1: text1,
+    imageBig,
+    section2Heading: "Nascetur ridiculus mus",
+    text2: text2,
+    summary: blogPreviewSummary,
     categories: ["Product", "Technology"],
   },
   {
+    id: "1",
     img: image1,
+    imageBig,
     title: "10 Things Nobody Told You About Banko",
-    txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi.",
+    section1Heading: "Et malesuada fames ac turpis",
+    text1: text1,
+    section2Heading: "Nascetur ridiculus mus",
+    text2: text2,
+    summary: blogPreviewSummary,
     categories: ["Product", "Technology"],
   },
   {
+    id: "2",
     img: image2,
+    imageBig,
     title: "7 Ways To Improve You Saving Habits",
-    txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi.",
+    section1Heading: "Et malesuada fames ac turpis",
+    text1: text1,
+    section2Heading: "Nascetur ridiculus mus",
+    text2: text2,
+    summary: blogPreviewSummary,
+    categories: ["Product", "Technology"],
+  },
+  {
+    id: "3",
+    img: image4,
+    imageBig,
+    title: "7 Ways To Improve You Saving Habits",
+    section1Heading: "Et malesuada fames ac turpis",
+    text1: text1,
+    section2Heading: "Nascetur ridiculus mus",
+    text2: text2,
+    summary: blogPreviewSummary,
+    categories: ["Product", "Technology"],
+  },
+  {
+    id: "4",
+    img: image5,
+    imageBig,
+    title: "7 Ways To Improve You Saving Habits",
+    section1Heading: "Et malesuada fames ac turpis",
+    text1: text1,
+    section2Heading: "Nascetur ridiculus mus",
+    text2: text2,
+    summary: blogPreviewSummary,
+    categories: ["Product", "Technology"],
+  },
+  {
+    id: "5",
+    img: image6,
+    imageBig,
+    title: "7 Ways To Improve You Saving Habits",
+    section1Heading: "Et malesuada fames ac turpis",
+    text1: text1,
+    section2Heading: "Nascetur ridiculus mus",
+    text2: text2,
+    summary: blogPreviewSummary,
     categories: ["Product", "Technology"],
   },
 ];
