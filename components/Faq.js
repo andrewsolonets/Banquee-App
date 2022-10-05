@@ -7,9 +7,9 @@ import { faqContent } from "../utils/content";
 
 export const Faq = () => {
   return (
-    <section className="flex items-start justify-between py-40 text-black-txt ">
-      <div className="flex flex-col gap-12">
-        <h2 className="font-heading text-6xl leading-tight tracking-tight">
+    <section className="flex flex-col items-start justify-between gap-14 py-40 text-black-txt md:flex-row md:gap-0 ">
+      <div className="flex w-full flex-col items-center gap-12 md:items-start">
+        <h2 className="font-heading text-[2.5rem] leading-tight tracking-tight  md:text-left md:text-6xl">
           Need help?
         </h2>
         <div className=" flex flex-col items-start gap-6">
@@ -36,7 +36,7 @@ export const Faq = () => {
         </div>
         <ButtonTextM>Support</ButtonTextM>
       </div>
-      <div className="flex w-1/2 flex-col gap-8">
+      <div className="flex w-full flex-col gap-8 md:w-1/2">
         {faqContent.map((el, i) => (
           <Accordion title={el.title} content={el.content} key={i} />
         ))}

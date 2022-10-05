@@ -6,12 +6,12 @@ export const Blog = ({ heading = "Blog" }) => {
   return (
     <section className="flex flex-col items-center gap-16  pb-40 text-black-txt">
       <div className="flex w-full justify-between">
-        <h2 className="font-heading text-6xl leading-tight tracking-tight ">
+        <h2 className=" text-center font-heading text-[2.5rem] leading-tight tracking-tight sm:text-5xl md:text-left md:text-7xl ">
           {heading}
         </h2>
         <ButtonTextM>All Articles</ButtonTextM>
       </div>
-      <div className="flex w-full items-start gap-8">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {blogPosts.map(
           (el, i) =>
             i <= 2 && (

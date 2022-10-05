@@ -5,32 +5,32 @@ import { transactions } from "../../utils/content";
 
 export const MainSection3 = () => {
   return (
-    <section className="isolate flex items-center justify-between gap-44 overflow-hidden bg-primary-light py-32 px-40 font-medium text-black-txt 2xl:px-60">
+    <section className=" isolate flex flex-col items-center justify-between gap-20 overflow-hidden bg-primary-light  py-32  px-5 font-medium text-black-txt md:flex-row md:gap-44 md:px-20 2xl:px-60 ">
       <div className="relative flex max-w-xl flex-col gap-8">
         <div className="flex flex-col gap-4 ">
-          <h2 className="font-heading text-6xl leading-tight tracking-tight">
+          <h2 className="text-center font-heading text-[2.5rem] leading-tight tracking-tight sm:text-5xl md:text-left md:text-7xl ">
             Send & receive <br></br> money instantly
           </h2>
-          <p className="text-xl leading-relaxed">
+          <p className="leading-relaxed md:text-xl 2xl:text-2xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br></br>{" "}
             sed do eiusmod tempor incididunt ut labore et.
           </p>
         </div>
 
         <div className="flex flex-col gap-3">
-          <div className="flex items-center gap-4 text-xl">
+          <div className="flex items-center gap-4 md:text-xl 2xl:text-2xl">
             <BadgeS bg="bg-primary">
               <TickIcon className="w-5 fill-white" />
             </BadgeS>
             <span>Malesuada Ipsum</span>
           </div>
-          <div className="flex items-center gap-4 text-xl">
+          <div className="flex items-center gap-4 md:text-xl 2xl:text-2xl">
             <BadgeS bg="bg-primary">
               <TickIcon className="w-5 fill-white" />
             </BadgeS>
             <span>Vestibulum</span>
           </div>
-          <div className="flex items-center gap-4 text-xl">
+          <div className="flex items-center gap-4 md:text-xl 2xl:text-2xl">
             <BadgeS bg="bg-primary">
               <TickIcon className="w-5 fill-white" />
             </BadgeS>

@@ -2,7 +2,7 @@ import StarIcon from "../assets/StarIcon";
 
 export const ReviewItem = ({ stars = 5, heading, text, text2, name, job }) => {
   return (
-    <div className="flex flex-col gap-6 rounded-xl border-2 border-grey p-8 xl:w-80 2xl:w-96">
+    <div className="flex h-fit flex-col gap-6 rounded-xl border-2 border-grey p-8 xl:w-80 2xl:w-96">
       <div className="flex flex-col gap-4">
         <div className="flex flex-col gap-2">
           <div className="flex gap-1">

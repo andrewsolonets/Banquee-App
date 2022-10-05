@@ -7,7 +7,7 @@ import { Card2 } from "./Card";
 
 export const ShoppingItems = ({ special, cardSize }) => {
   return (
-    <div className={`flex w-full justify-between ${special}`}>
+    <div className={`flex w-full flex-wrap justify-between ${special}`}>
       <Card2
         icon={<LaptopIcon />}
         bg={"bg-primary-light"}

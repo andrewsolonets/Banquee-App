@@ -18,7 +18,7 @@ const SupportPage = () => {
         special={"pt-20 items-start  max-h-[35rem]"}
         headingStyles={"mt-5"}
       />
-      <div className="px-8 pb-40 pt-24  lg:px-40  2xl:px-60">
+      <div className="px-8 pb-40 pt-24   2xl:px-60">
         <div className="pb-24">
           <CtaMini />
         </div>

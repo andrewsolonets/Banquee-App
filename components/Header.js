@@ -6,10 +6,10 @@ export const Header = () => {
   const router = useRouter();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 flex w-full items-center justify-between bg-white px-6 py-3 font-medium md:px-12">
+    <header className="fixed top-0 left-0 right-0 z-50 flex  items-center justify-between bg-white px-5 py-3 font-medium md:px-12">
       <div>
         <Link href="/">
-          <h3 className="cursor-pointer font-heading text-4xl font-bold tracking-tight text-primary md:text-2xl">
+          <h3 className="cursor-pointer font-heading text-3xl font-bold tracking-tight text-primary md:text-2xl">
             banquee.
           </h3>
         </Link>

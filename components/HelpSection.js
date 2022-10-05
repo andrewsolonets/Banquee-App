@@ -4,10 +4,13 @@ import { BadgeL } from "./Badge";
 
 export const HelpSection = ({ heading, items, icon, id }) => {
   return (
-    <div className="flex w-full flex-col items-start gap-16" id={id}>
+    <div
+      className="flex w-full flex-col items-center gap-16 md:items-start"
+      id={id}
+    >
       <div className="flex items-center gap-4">
         <BadgeL>{icon}</BadgeL>
-        <h4 className="font-heading text-2xl leading-tight tracking-tight">
+        <h4 className=" text-center font-heading text-[2.5rem] leading-tight tracking-tight sm:text-5xl md:text-left md:text-7xl ">
           {heading}
         </h4>
       </div>

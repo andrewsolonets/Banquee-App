@@ -52,15 +52,6 @@ export const reviewData = [
     job: "Medical Assistant",
   },
   {
-    column: 1,
-    stars: 5,
-    heading: "Sunt qui esse pariatur duis deserunt mollit",
-    text: "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.",
-    text2: undefined,
-    name: "Cody Fisher",
-    job: "Medical Assistant",
-  },
-  {
     column: 2,
     stars: 4,
     heading: "At lectus urna duis convallis tellus",
@@ -71,6 +62,16 @@ export const reviewData = [
     job: "Nursing Assistant",
   },
   {
+    column: 3,
+    stars: 5,
+    heading: "Elit aute irure tempor cupidatat incididunt",
+    text: "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.",
+    text2: undefined,
+    name: "Guy Hawkins",
+    job: "President of Sales",
+  },
+
+  {
     column: 2,
     stars: 5,
     heading: "Donec et fringilla neque",
@@ -80,14 +81,15 @@ export const reviewData = [
     job: "Dog Trainer",
   },
   {
-    column: 3,
+    column: 1,
     stars: 5,
-    heading: "Elit aute irure tempor cupidatat incididunt",
+    heading: "Sunt qui esse pariatur duis deserunt mollit",
     text: "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.",
     text2: undefined,
-    name: "Guy Hawkins",
-    job: "President of Sales",
+    name: "Cody Fisher",
+    job: "Medical Assistant",
   },
+
   {
     column: 3,
     stars: 4,

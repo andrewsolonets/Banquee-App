@@ -9,20 +9,20 @@ import { pinPoints } from "../../utils/content";
 
 export const MainSection1 = () => {
   return (
-    <section className="flex w-full flex-col items-center py-20 pb-32 font-medium text-black-txt  ">
-      <div className="flex w-full items-center justify-between font-medium ">
-        <div className="flex w-1/2 flex-col gap-8">
-          <div className="flex flex-col xl:gap-6 2xl:gap-2">
-            <h1 className="font-heading leading-tight tracking-tight xl:text-7xl 2xl:text-8xl">
+    <section className="flex w-full  flex-col items-center pb-32 font-medium text-black-txt md:py-20  ">
+      <div className="flex w-full flex-col-reverse items-center justify-between font-medium md:flex-row">
+        <div className="flex w-full flex-col gap-8 md:w-1/2">
+          <div className="flex flex-col gap-4 text-center md:text-left xl:gap-6 2xl:gap-2">
+            <h1 className="font-heading text-[2.5rem] leading-tight tracking-tight sm:text-5xl md:text-7xl 2xl:text-8xl">
               Banking<br></br> starts here.
             </h1>
-            <p className="leading-relaxed xl:text-xl 2xl:text-2xl">
+            <p className="leading-relaxed md:text-xl 2xl:text-2xl">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore.
             </p>
           </div>
 
-          <div className="flex gap-20 text-lg">
+          <div className="flex w-full justify-center gap-20 text-lg  md:justify-start">
             <div className="flex flex-col gap-4 ">
               {pinPoints.map(
                 (el, i) =>
@@ -50,7 +50,7 @@ export const MainSection1 = () => {
               )}
             </div>
           </div>
-          <div className="flex grow-0 items-center gap-8">
+          <div className="flex grow-0 flex-col items-center gap-8 md:flex-row">
             <ButtonM>Open Account</ButtonM>
             <ButtonTextM>Compare Cards</ButtonTextM>
           </div>
