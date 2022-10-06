@@ -4,7 +4,7 @@ import { BadgeS } from "../../components/Badge";
 import screen1 from "../../assets/app1.png";
 
 export const FeatureContainer = ({ children }) => (
-  <div className="flex h-auto min-h-screen w-full flex-col items-center justify-start gap-16  md:flex-row  md:items-start md:justify-between md:gap-0">
+  <div className="flex h-auto min-h-screen w-full flex-col items-center justify-start gap-16 md:flex-row  md:items-start  md:justify-between md:gap-20 lg:gap-0">
     {children}
   </div>
 );
@@ -28,10 +28,10 @@ export const FeatureLeft = ({
         <h5 className="font-heading text-xl tracking-tight ">
           {headingSecondary}
         </h5>
-        <h2 className="text-center font-heading text-[2.5rem] leading-tight tracking-tight sm:text-5xl md:text-start md:text-6xl ">
+        <h2 className="text-center font-heading text-[2.5rem] leading-tight tracking-tight sm:text-5xl md:text-start  ">
           {heading}
         </h2>
-        <p className="text-center leading-relaxed md:text-left md:text-xl 2xl:text-2xl">
+        <p className="text-center leading-relaxed md:text-left md:text-lg lg:text-xl 2xl:text-2xl">
           {textMain}
         </p>
       </div>
@@ -67,7 +67,7 @@ export const FeatureRight = ({ children, progress, picture }) => {
       className="flex  h-screen  w-full justify-center md:w-1/2 lg:items-center"
       style={{ transform: `translateY(${translateY}px)` }}
     >
-      <div className=" overflow-hidden md:h-auto md:w-max ">
+      <div className=" overflow-hidden md:h-auto lg:w-max ">
         {/* {children} */}
         <Image src={picture} alt="app demo" style={{ width: "50rem" }} />
       </div>

@@ -19,7 +19,7 @@ export const Cta = () => {
               sed do eiusmod tempor incididunt ut labore et.
             </p>
           </div>
-          <div className="flex flex-col items-center gap-10 text-white md:flex-row md:items-start md:gap-20 md:text-lg">
+          <div className="flex flex-col items-center gap-4 text-white md:flex-row md:items-start md:gap-20 md:text-lg">
             <div className="flex flex-col gap-4 ">
               <div className="flex items-center gap-4">
                 <BadgeS bg="bg-white/20">

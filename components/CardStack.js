@@ -4,6 +4,7 @@ import Card1Rotated from "../assets/Card1Rotated";
 import Card2 from "../assets/Card2";
 import Card2Rotated from "../assets/Card2Rotated";
 import CardRotated from "../assets/CardRotated";
+import { motion } from "framer-motion";
 
 export const CardStack = () => {
   return (

@@ -30,11 +30,11 @@ export const AllInOneBank = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
             </div>
-            <div className="w-3/4 md:w-max">
+            <div className="flex w-3/4 justify-center md:w-max">
               <Image src={screen3} alt={"Screen"} />
             </div>
           </div>
-          <div className="relative flex h-[31rem] w-full flex-col  flex-wrap items-center gap-20 overflow-hidden rounded-3xl bg-white-bgMuted px-4  pt-16 md:px-24 ">
+          <div className="relative flex h-[25rem] w-full flex-col flex-wrap  items-center gap-20 overflow-hidden rounded-3xl bg-white-bgMuted px-4 pt-16  md:px-24 lg:h-[31rem] ">
             <div className="flex flex-col items-center gap-2 text-center">
               <h3 className="text-center font-heading text-[2.5rem] leading-tight tracking-tight sm:text-3xl  md:text-4xl ">
                 Cards

@@ -1,7 +1,5 @@
 import { ButtonM, ButtonTextM } from "../../components/Button";
-import cardsDemo from "../../assets/cardsmain.png";
-import tickSvg from "../../assets/TickIcon.js";
-import Image from "next/image";
+
 import { BadgeS } from "../../components/Badge";
 import TickIcon from "../../assets/TickIcon.js";
 import { CardsMain } from "../../components/CardStack";

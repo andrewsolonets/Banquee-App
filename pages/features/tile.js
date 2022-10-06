@@ -44,7 +44,7 @@ export const TileBackground = ({ children }) => {
 
 export const TileContent = ({ children }) => {
   return (
-    <div className="sticky top-8 h-screen overflow-hidden md:top-16 ">
+    <div className="sticky top-6 h-screen overflow-hidden md:top-16 ">
       {children}
     </div>
   );

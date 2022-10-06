@@ -3,6 +3,7 @@ import PhoneIcon from "../assets/PhoneIcon";
 import { Accordion } from "./Accordion";
 import { BadgeL } from "./Badge";
 import { ButtonTextM } from "./Button";
+import { motion, LayoutGroup } from "framer-motion";
 import { faqContent } from "../utils/content";
 
 export const Faq = () => {
@@ -36,11 +37,13 @@ export const Faq = () => {
         </div>
         <ButtonTextM>Support</ButtonTextM>
       </div>
-      <div className="flex w-full flex-col gap-8 md:w-1/2">
-        {faqContent.map((el, i) => (
-          <Accordion title={el.title} content={el.content} key={i} />
-        ))}
-      </div>
+      <motion.div className="flex w-full flex-col gap-8 md:w-1/2">
+        <LayoutGroup>
+          {faqContent.map((el, i) => (
+            <Accordion title={el.title} content={el.content} key={i} />
+          ))}
+        </LayoutGroup>
+      </motion.div>
     </section>
   );
 };

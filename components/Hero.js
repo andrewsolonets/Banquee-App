@@ -16,7 +16,7 @@ export const HeroSection = ({
           >
             <p className="text-center text-xl lg:text-left">{smallText}</p>
             <h1
-              className={` font-heading  text-[2.5rem] leading-tight tracking-tight sm:text-5xl md:text-7xl`}
+              className={` font-heading  text-[2.5rem] leading-tight tracking-tight sm:text-5xl md:text-6xl`}
             >
               {heading}
             </h1>
