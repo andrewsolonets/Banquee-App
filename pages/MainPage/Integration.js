@@ -14,7 +14,7 @@ export const Integration = () => {
           <h5 className="font-heading text-xl leading-tight tracking-tight">
             Tools
           </h5>
-          <h2 className="text-center font-heading text-[2.5rem] leading-tight tracking-tight sm:text-5xl md:text-left md:text-7xl ">
+          <h2 className="text-center font-heading text-[2.5rem] leading-tight tracking-tight sm:text-5xl md:text-left lg:text-6xl 2xl:text-7xl">
             Seemless<br></br> integration
           </h2>
           <p className="text-center md:text-left md:text-xl 2xl:text-2xl">

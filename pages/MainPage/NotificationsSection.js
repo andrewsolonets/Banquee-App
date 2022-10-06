@@ -11,7 +11,7 @@ export const Notifications = () => {
       <div className="relative flex w-full max-w-xl flex-col items-center gap-8 md:w-1/2 md:items-start ">
         <div className="flex w-full flex-col items-center gap-4 md:items-start ">
           <h5 className="font-heading text-xl tracking-tight">Notifications</h5>
-          <h2 className="text-center font-heading text-[2.5rem] leading-tight tracking-tight sm:text-5xl md:text-left md:text-7xl ">
+          <h2 className="text-center font-heading text-[2.5rem] leading-tight tracking-tight  sm:text-5xl md:text-left lg:text-6xl 2xl:text-7xl ">
             Stay notified
           </h2>
           <p className="text-center leading-relaxed md:text-left md:text-xl 2xl:text-2xl">

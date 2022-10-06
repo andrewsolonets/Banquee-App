@@ -6,7 +6,7 @@ import { ButtonM } from "./Button";
 
 export const CtaMini = () => {
   return (
-    <div className="flex justify-between rounded-lg  bg-primary p-8">
+    <div className="flex flex-col items-center justify-between gap-6 rounded-lg bg-primary p-8  lg:flex-row lg:gap-2">
       <div className="relative flex max-w-xl  gap-8 ">
         <div className="flex flex-col  text-white">
           <h5 className="font-heading text-3xl leading-tight tracking-tight">
@@ -17,7 +17,7 @@ export const CtaMini = () => {
           </p>
         </div>
       </div>
-      <div className="flex  gap-20 text-lg  text-white">
+      <div className="flex  flex-col gap-6 text-lg text-white lg:flex-row  lg:gap-20">
         <div className="flex items-center gap-4">
           <BadgeL bg="bg-white/20">
             <PhoneIcon className="w-7 fill-white" />

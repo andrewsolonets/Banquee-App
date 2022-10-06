@@ -11,7 +11,7 @@ export const Cta = () => {
       <div className="flex w-full flex-col items-center gap-16 rounded-3xl bg-primary px-6 py-8 md:items-start md:py-20 md:px-24 lg:flex-row">
         <div className="relative flex max-w-xl flex-col gap-8">
           <div className="flex flex-col gap-4 text-center text-white md:text-left">
-            <h2 className=" text-center font-heading text-[2.5rem] leading-tight tracking-tight sm:text-5xl md:text-left md:text-7xl ">
+            <h2 className=" text-center font-heading text-[2.5rem] leading-tight tracking-tight sm:text-5xl md:text-left lg:text-6xl 2xl:text-7xl ">
               One app. <br></br>One banking.
             </h2>
             <p className="text-lg leading-relaxed md:text-xl">

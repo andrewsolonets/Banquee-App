@@ -4,7 +4,7 @@ import { BadgeS } from "../../components/Badge";
 import screen1 from "../../assets/app1.png";
 
 export const FeatureContainer = ({ children }) => (
-  <div className="flex h-auto min-h-screen w-full flex-col items-start justify-between lg:flex-row">
+  <div className="flex h-auto min-h-screen w-full flex-col items-center justify-start gap-16  md:flex-row  md:items-start md:justify-between md:gap-0">
     {children}
   </div>
 );
@@ -21,33 +21,35 @@ export const FeatureLeft = ({
 
   return (
     <div
-      className="relative flex h-[30vh] w-full max-w-xl flex-col gap-8 lg:h-auto lg:w-1/2"
+      className="relative flex h-[30vh] w-full max-w-xl flex-col gap-8 md:w-1/2 lg:h-auto"
       style={{ transform: `translateY(${translateY}px)` }}
     >
-      <div className="flex flex-col items-start gap-4 ">
+      <div className="flex flex-col items-center gap-4 md:items-start ">
         <h5 className="font-heading text-xl tracking-tight ">
           {headingSecondary}
         </h5>
-        <h2 className="font-heading text-6xl leading-tight tracking-tight">
+        <h2 className="text-center font-heading text-[2.5rem] leading-tight tracking-tight sm:text-5xl md:text-start md:text-6xl ">
           {heading}
         </h2>
-        <p className="text-xl">{textMain}</p>
+        <p className="text-center leading-relaxed md:text-left md:text-xl 2xl:text-2xl">
+          {textMain}
+        </p>
       </div>
 
-      <div className="flex flex-col gap-3">
-        <div className="flex items-center gap-4 text-xl">
+      <div className="flex flex-col items-center gap-3 md:items-start">
+        <div className="flex items-center gap-4 md:text-xl 2xl:text-2xl">
           <BadgeS>
             <TickIcon className="w-5 fill-primary" />
           </BadgeS>
           <span>Malesuada Ipsum</span>
         </div>
-        <div className="flex items-center gap-4 text-xl">
+        <div className="flex items-center gap-4 md:text-xl 2xl:text-2xl">
           <BadgeS>
             <TickIcon className="w-5 fill-primary" />
           </BadgeS>
           <span>Vestibulum</span>
         </div>
-        <div className="flex items-center gap-4 text-xl">
+        <div className="flex items-center gap-4 md:text-xl 2xl:text-2xl">
           <BadgeS>
             <TickIcon className="w-5 fill-primary" />
           </BadgeS>
@@ -62,10 +64,10 @@ export const FeatureRight = ({ children, progress, picture }) => {
   let translateY = Math.max(-50, -(progress - 0.5) * 50);
   return (
     <div
-      className="flex h-screen  w-1/2 justify-center lg:items-center"
+      className="flex  h-screen  w-full justify-center md:w-1/2 lg:items-center"
       style={{ transform: `translateY(${translateY}px)` }}
     >
-      <div className="lg:w-max ">
+      <div className=" overflow-hidden md:h-auto md:w-max ">
         {/* {children} */}
         <Image src={picture} alt="app demo" style={{ width: "50rem" }} />
       </div>
@@ -79,41 +81,3 @@ export const FeatureRight = ({ children, progress, picture }) => {
 //     <div className="h-[70vh] w-1/2 bg-black-bg lg:min-h-screen"></div>
 //   </div>
 // );
-
-export const Feature = ({ headingSecondary, heading, textMain, img }) => {
-  return (
-    <section className="flex w-full items-start justify-between">
-      <div className="relative flex w-1/2 max-w-xl flex-col gap-8 ">
-        <div className="flex flex-col items-start gap-4 ">
-          <h5 className="font-heading text-xl tracking-tight">
-            {headingSecondary}
-          </h5>
-          <h2 className="font-heading text-6xl">{heading}</h2>
-          <p className="text-xl">{textMain}</p>
-        </div>
-
-        <div className="flex flex-col gap-3">
-          <div className="flex items-center gap-4 text-xl">
-            <BadgeS>
-              <TickIcon className="w-5 fill-primary" />
-            </BadgeS>
-            <span>Malesuada Ipsum</span>
-          </div>
-          <div className="flex items-center gap-4 text-xl">
-            <BadgeS>
-              <TickIcon className="w-5 fill-primary" />
-            </BadgeS>
-            <span>Vestibulum</span>
-          </div>
-          <div className="flex items-center gap-4 text-xl">
-            <BadgeS>
-              <TickIcon className="w-5 fill-primary" />
-            </BadgeS>
-            <span>Parturient Lorem</span>
-          </div>
-        </div>
-      </div>
-      <Image src={screen1} alt="app demo" />
-    </section>
-  );
-};

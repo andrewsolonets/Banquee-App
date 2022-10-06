@@ -13,7 +13,7 @@ const BlogPost = ({ blogPostData }) => {
   console.log(blogPostData);
 
   return (
-    <section className="flex flex-col items-center gap-16 py-24 px-40">
+    <section className="flex flex-col items-center gap-16 py-4 px-5 md:px-20  lg:py-24  2xl:px-60">
       <div className="flex flex-col items-center gap-8">
         <div className="flex flex-col items-center gap-4 text-center">
           <div className="flex gap-1">
@@ -26,18 +26,20 @@ const BlogPost = ({ blogPostData }) => {
               </span>
             ))}
           </div>
-          <h2 className="w-4/5 font-heading text-6xl leading-tight tracking-tight">
+          <h2 className="font-heading text-[2.5rem]  leading-tight tracking-tight sm:text-5xl lg:w-4/5">
             {blogPostData.title}
           </h2>
         </div>
-        <p className="w-3/5 text-center text-xl">{blogPostData.summary}</p>
+        <p className="text-center leading-relaxed md:text-xl lg:w-3/5 2xl:text-2xl">
+          {blogPostData.summary}
+        </p>
       </div>
       <Image
         src={blogPostData.image}
         alt={blogPostData.title}
         className="rounded-2xl"
       />
-      <div className="flex w-3/5 flex-col gap-8">
+      <div className="flex flex-col gap-8 lg:w-3/5">
         <h4 className=" font-heading text-2xl leading-tight tracking-tight">
           {blogPostData.section1Heading}
         </h4>

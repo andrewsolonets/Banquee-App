@@ -6,18 +6,18 @@ import { ChooseCardItem } from "../../components/ChooseCardItem";
 
 export const ChooseCards = () => {
   return (
-    <section className="flex w-full flex-col items-center gap-24 pt-40">
-      <div className="flex flex-col items-center gap-4 text-center">
+    <section className="flex w-full flex-col flex-wrap items-center gap-24 pt-40">
+      <div className="flex flex-col  items-center gap-4 text-center">
         <h5 className="font-heading text-xl tracking-tight">Account</h5>
-        <h2 className=" font-heading text-6xl leading-tight tracking-tight">
+        <h2 className=" text-center font-heading text-[2.5rem] leading-tight tracking-tight sm:text-5xl  md:text-7xl">
           Perfect card<br></br> for your needs.
         </h2>
-        <p className="text-xl">
+        <p className="text-center leading-relaxed  md:text-xl 2xl:text-2xl">
           Senectus et netus et malesuada fames ac turpis. <br></br>Sagittis
           vitae et leo duis ut diam.
         </p>
       </div>
-      <div className="flex gap-16">
+      <div className="flex flex-wrap justify-center gap-16 lg:flex-nowrap lg:justify-start">
         <ChooseCardItem
           image={<CardImage className="w-[19rem] 2xl:w-[22rem]" />}
           badge={true}

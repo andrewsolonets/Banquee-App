@@ -15,7 +15,7 @@ const SupportPage = () => {
           </span>
         }
         rightContent={<SupportMobile />}
-        special={"pt-20 items-start  max-h-[35rem]"}
+        special={"pt-20 items-center lg:items-start  max-h-[35rem]"}
         headingStyles={"mt-5"}
       />
       <div className="px-8 pb-40 pt-24   2xl:px-60">

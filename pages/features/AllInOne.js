@@ -9,50 +9,50 @@ import { CardsFeatures2 } from "./CardsFeatures";
 
 export const AllInOneBank = () => {
   return (
-    <section className="flex w-full flex-col items-center gap-24 pt-40">
-      <div className="flex flex-col gap-4 text-center">
-        <h2 className="font-heading text-6xl leading-tight tracking-tight">
+    <section className="flex w-full flex-col items-center gap-24 pt-20 md:pt-40">
+      <div className="flex flex-col gap-4 text-center md:text-left">
+        <h2 className="text-center font-heading text-[2.5rem] leading-tight tracking-tight sm:text-5xl md:text-start md:text-6xl ">
           All in one bank. Really.
         </h2>
-        <p className="text-xl">
+        <p className="text-center leading-relaxed md:text-xl 2xl:text-2xl">
           Senectus et netus et malesuada fames ac turpis. <br></br> Sagittis
           vitae et leo duis ut diam.
         </p>
       </div>
-      <div className="flex flex-col items-center gap-8">
-        <div className="flex w-full items-center justify-between gap-8">
-          <div className="flex  max-h-[31rem] flex-col items-center gap-20 overflow-hidden rounded-3xl bg-white-bgMuted px-24 pt-16">
+      <div className="flex w-full  flex-col flex-wrap items-center gap-8 lg:flex-nowrap">
+        <div className="flex w-full flex-wrap  items-center justify-center gap-8 md:justify-between lg:flex-nowrap">
+          <div className="flex  max-h-[31rem] w-full flex-col items-center gap-20 overflow-hidden rounded-3xl bg-white-bgMuted px-4 pt-16 md:px-24">
             <div className="flex flex-col items-center gap-2 text-center">
-              <h3 className="font-heading text-4xl leading-tight tracking-tight">
+              <h3 className="text-center font-heading text-[2.5rem] leading-tight tracking-tight sm:text-3xl md:text-left md:text-4xl ">
                 Statistics
               </h3>
-              <p className="text-lg text-black-txt/50">
+              <p className="text-center leading-relaxed text-black-txt/50  md:text-lg 2xl:text-xl">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
             </div>
-            <div className="w-max">
+            <div className="w-3/4 md:w-max">
               <Image src={screen3} alt={"Screen"} />
             </div>
           </div>
-          <div className="relative flex h-[31rem]  flex-col items-center gap-20 overflow-hidden rounded-3xl bg-white-bgMuted px-24 pt-16 ">
+          <div className="relative flex h-[31rem] w-full flex-col  flex-wrap items-center gap-20 overflow-hidden rounded-3xl bg-white-bgMuted px-4  pt-16 md:px-24 ">
             <div className="flex flex-col items-center gap-2 text-center">
-              <h3 className="font-heading text-4xl leading-tight tracking-tight">
+              <h3 className="text-center font-heading text-[2.5rem] leading-tight tracking-tight sm:text-3xl  md:text-4xl ">
                 Cards
               </h3>
-              <p className="text-lg text-black-txt/50">
+              <p className="text-center leading-relaxed text-black-txt/50  md:text-lg 2xl:text-xl">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
               </p>
             </div>
             <CardsFeatures2 />
           </div>
         </div>
-        <div className="flex items-start gap-8">
-          <div className="flex max-h-[34.5rem]   w-1/3 max-w-sm flex-col items-center gap-14 overflow-hidden rounded-3xl bg-white-bgMuted px-12 pb-20 pt-14">
+        <div className="flex w-full flex-wrap items-center justify-center gap-8  md:items-start md:justify-start lg:flex-nowrap">
+          <div className=" flex max-h-[34.5rem] w-full flex-col   items-center gap-14 overflow-hidden  rounded-3xl bg-white-bgMuted px-12 pb-20 pt-14 lg:w-1/3 lg:max-w-sm ">
             <div className="flex flex-col  gap-2">
-              <h3 className="font-heading text-4xl leading-tight tracking-tight">
+              <h3 className="text-center font-heading text-[2.5rem] leading-tight tracking-tight sm:text-3xl  md:text-4xl ">
                 Easy <br></br> integration
               </h3>
-              <p className="text-lg text-black-txt/50">
+              <p className="text-center leading-relaxed text-black-txt/50  md:text-lg 2xl:text-xl">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
             </div>
@@ -60,12 +60,12 @@ export const AllInOneBank = () => {
               <LogosSmall />
             </div>
           </div>
-          <div className="flex max-h-[34.5rem]  w-1/3 max-w-sm flex-col items-center gap-14 overflow-hidden rounded-3xl bg-white-bgMuted px-12 py-14">
+          <div className="flex max-h-[34.5rem] w-full flex-col items-center gap-14 overflow-hidden rounded-3xl bg-white-bgMuted px-12 py-14 lg:w-1/3 lg:max-w-sm">
             <div className="flex flex-col  gap-2">
-              <h3 className="font-heading text-4xl leading-tight tracking-tight">
+              <h3 className="text-center font-heading text-[2.5rem] leading-tight tracking-tight sm:text-3xl  md:text-4xl ">
                 Saving <br></br>accounts
               </h3>
-              <p className="text-lg text-black-txt/50">
+              <p className="text-center leading-relaxed text-black-txt/50  md:text-lg 2xl:text-xl">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
             </div>
@@ -76,12 +76,12 @@ export const AllInOneBank = () => {
               />
             </div>
           </div>
-          <div className="flex  max-h-[34.5rem]  w-1/3  max-w-sm flex-col items-center gap-14 overflow-hidden rounded-3xl bg-white-bgMuted px-12 py-14">
+          <div className="flex  max-h-[34.5rem] w-full   flex-col  items-center gap-14 overflow-hidden rounded-3xl bg-white-bgMuted px-12 py-14 lg:w-1/3 lg:max-w-sm">
             <div className="flex flex-col  gap-2">
-              <h3 className="font-heading text-4xl leading-tight tracking-tight">
+              <h3 className="text-center font-heading text-[2.5rem] leading-tight tracking-tight sm:text-3xl  md:text-4xl ">
                 Instant transactions
               </h3>
-              <p className="text-lg text-black-txt/50">
+              <p className="text-center leading-relaxed text-black-txt/50  md:text-lg 2xl:text-xl">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
             </div>

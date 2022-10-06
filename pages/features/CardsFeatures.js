@@ -4,12 +4,12 @@ import CardRotated from "../../assets/CardRotated";
 
 export const CardsFeatures = () => {
   return (
-    <div className="absolute -bottom-[22rem] flex  h-[42rem] justify-center gap-16">
-      <Card2Rotated className="self-end xl:w-[17rem] 2xl:w-[18.75rem] " />
-      <Card1Rotated className="self-center xl:w-[17rem] 2xl:w-[18.75rem]" />
-      <CardRotated className="self-start xl:w-[17rem] 2xl:w-[18.75rem]" />
-      <Card1Rotated className="self-center xl:w-[17rem] 2xl:w-[18.75rem]" />
-      <Card2Rotated className="self-end xl:w-[17rem] 2xl:w-[18.75rem]" />
+    <div className="absolute -bottom-[12rem] flex h-[28rem] justify-center  gap-16 md:-bottom-[22rem] md:h-[42rem]">
+      <Card2Rotated className="w-[12rem] self-end md:w-[17rem] 2xl:w-[18.75rem] " />
+      <Card1Rotated className="w-[12rem] self-center md:w-[17rem] 2xl:w-[18.75rem]" />
+      <CardRotated className="w-[12rem] self-start md:w-[17rem] 2xl:w-[18.75rem]" />
+      <Card1Rotated className="w-[12rem] self-center md:w-[17rem] 2xl:w-[18.75rem]" />
+      <Card2Rotated className="w-[12rem] self-end md:w-[17rem] 2xl:w-[18.75rem]" />
     </div>
   );
 };

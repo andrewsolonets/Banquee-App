@@ -22,13 +22,13 @@ export const CardStack = () => {
 };
 export const CardsMain = () => {
   return (
-    <div className="relative flex h-[36rem] w-[25rem] items-center justify-center 2xl:justify-start">
+    <div className="relative flex h-[25rem] w-[25rem] items-center justify-center lg:h-[36rem] 2xl:justify-start">
       <div className="absolute rotate-[12deg] xl:-top-12 xl:left-28 2xl:-top-8 2xl:left-12">
-        <CardRotated className="w-[12rem] md:w-[17rem] 2xl:w-[18.75rem]" />
+        <CardRotated className="w-[11rem] md:w-[17rem] 2xl:w-[18.75rem]" />
       </div>
 
       <div className="absolute">
-        <Card1Rotated className="w-[14rem] md:w-[17rem] 2xl:w-[18.75rem]" />
+        <Card1Rotated className="w-[11rem] md:w-[17rem] 2xl:w-[18.75rem]" />
       </div>
     </div>
   );
@@ -36,10 +36,10 @@ export const CardsMain = () => {
 
 export const CardsCompare = () => {
   return (
-    <div className="relative flex h-[31.2rem] w-[26rem] items-start justify-center 2xl:h-[34rem] ">
-      <CardRotated className="absolute bottom-0 right-0 rotate-[10deg] xl:w-[17rem] 2xl:w-[18.75rem]" />
-      <Card1Rotated className="absolute z-10 xl:w-[17rem] 2xl:w-[18.75rem]" />
-      <Card2Rotated className="absolute bottom-0 left-0 rotate-[-10deg] xl:w-[17rem] 2xl:w-[18.75rem]" />
+    <div className="relative flex h-[31.2rem] w-[20rem] items-start justify-center 2xl:h-[34rem] ">
+      <CardRotated className="absolute -bottom-[10rem] right-0 w-[12rem] rotate-[10deg] lg:bottom-0 xl:w-[17rem] 2xl:w-[18.75rem]" />
+      <Card1Rotated className="absolute z-10 w-[12rem] xl:w-[17rem] 2xl:w-[18.75rem]" />
+      <Card2Rotated className="absolute -bottom-[10rem] left-0 w-[12rem] rotate-[-10deg] lg:bottom-0 xl:w-[17rem] 2xl:w-[18.75rem]" />
     </div>
   );
 };

@@ -11,8 +11,8 @@ import {
 
 export const MainCompare = () => {
   return (
-    <div className="flex flex-col items-end gap-24 px-36 py-9">
-      <div className="flex gap-16 xl:max-w-[48rem] 2xl:max-w-[62.5rem]">
+    <div className="flex flex-col items-center gap-24 px-4 py-9 lg:items-end lg:px-36">
+      <div className="flex flex-col gap-16 lg:flex-row xl:max-w-[48rem] 2xl:max-w-[62.5rem]">
         <ChooseCardItem
           small={true}
           image={<CardImage className="w-[13rem] 2xl:w-[17rem]" />}

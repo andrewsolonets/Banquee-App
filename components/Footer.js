@@ -1,7 +1,7 @@
 export const Footer = () => {
   return (
     <footer className="flex flex-col items-start gap-20 px-10 pt-24 pb-11 lg:px-36">
-      <div className="flex w-full flex-col items-start justify-between gap-12 md:gap-0 lg:flex-row">
+      <div className="flex w-full flex-col items-start justify-between gap-12 md:flex-row md:gap-0">
         <h3 className="w-full font-heading text-2xl font-bold tracking-tight text-primary md:w-4/12">
           banquee.
         </h3>

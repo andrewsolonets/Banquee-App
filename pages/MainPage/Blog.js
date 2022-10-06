@@ -6,7 +6,7 @@ export const Blog = ({ heading = "Blog" }) => {
   return (
     <section className="flex flex-col items-center gap-16  pb-40 text-black-txt">
       <div className="flex w-full justify-between">
-        <h2 className=" text-center font-heading text-[2.5rem] leading-tight tracking-tight sm:text-5xl md:text-left md:text-7xl ">
+        <h2 className=" text-center font-heading text-[2.5rem] leading-tight tracking-tight  sm:text-5xl md:text-left lg:text-6xl 2xl:text-7xl ">
           {heading}
         </h2>
         <ButtonTextM>All Articles</ButtonTextM>
