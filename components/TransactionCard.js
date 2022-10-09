@@ -1,4 +1,5 @@
 import AppleIcon from "../assets/Apple";
+import { AnimationContainer } from "./AnimationContainer";
 import { BadgeTrans } from "./Badge";
 
 export const TransactionCard = ({
@@ -9,7 +10,7 @@ export const TransactionCard = ({
   w = "w-96",
 }) => {
   return (
-    <div
+    <AnimationContainer
       className={`flex ${w} items-center justify-start gap-4 rounded-xl bg-white p-4 `}
     >
       <BadgeTrans>{icon}</BadgeTrans>
@@ -20,6 +21,6 @@ export const TransactionCard = ({
         <p className="text-black-txt/50">{descr}</p>
       </div>
       <span className="ml-auto font-heading text-lg">{price}</span>
-    </div>
+    </AnimationContainer>
   );
 };

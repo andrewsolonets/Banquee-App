@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Cross from "../assets/Cross";
+
 import Plus1 from "../assets/Plus1";
 import { motion } from "framer-motion";
 

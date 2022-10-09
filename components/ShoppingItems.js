@@ -3,11 +3,21 @@ import BicycleIcon from "../assets/Bicycle";
 import CameraIcon from "../assets/Camera";
 import LaptopIcon from "../assets/Laptop";
 import PlusIcon from "../assets/PlusIcon";
+import {
+  AnimationChildContainer,
+  AnimationContainer,
+  AnimationParentContainer,
+} from "./AnimationContainer";
 import { Card2 } from "./Card";
 
 export const ShoppingItems = ({ special, cardSize }) => {
   return (
-    <div className={`flex w-full flex-wrap justify-between ${special}`}>
+    <AnimationParentContainer
+      staggerChildren={0.18}
+      duration={0.1}
+      amount={0.3}
+      className={`flex w-full flex-wrap justify-between ${special}`}
+    >
       <Card2
         icon={<LaptopIcon />}
         bg={"bg-primary-light"}
@@ -36,11 +46,12 @@ export const ShoppingItems = ({ special, cardSize }) => {
         price={"100$"}
         special={cardSize}
       />
-      <div
+      <AnimationChildContainer
+        variant="horizontal"
         className={`flex h-44 w-44 items-center justify-center rounded-2xl bg-white-bgMuted 2xl:h-52 2xl:w-52`}
       >
         <PlusIcon />
-      </div>
-    </div>
+      </AnimationChildContainer>
+    </AnimationParentContainer>
   );
 };

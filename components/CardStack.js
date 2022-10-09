@@ -5,20 +5,39 @@ import Card2 from "../assets/Card2";
 import Card2Rotated from "../assets/Card2Rotated";
 import CardRotated from "../assets/CardRotated";
 import { motion } from "framer-motion";
+import {
+  AnimationChildContainer,
+  AnimationParentContainer,
+} from "./AnimationContainer";
 
 export const CardStack = () => {
   return (
-    <div className="relative flex  h-[31.25rem] w-[25rem] flex-col md:w-[31.25rem]">
-      <div className="absolute w-[25rem] md:w-[31.25rem]">
+    <AnimationParentContainer
+      direction={"y"}
+      staggerChildren={0.3}
+      amount={0.4}
+      duration={0.1}
+      className="relative flex  h-[31.25rem] w-[25rem] flex-col md:w-[31.25rem]"
+    >
+      <AnimationChildContainer
+        offsetY={120}
+        className="absolute w-[25rem] md:w-[31.25rem]"
+      >
         <CardImage />
-      </div>
-      <div className="absolute top-24 w-[25rem] md:w-[31.25rem] ">
+      </AnimationChildContainer>
+      <AnimationChildContainer
+        offsetY={120}
+        className="absolute top-24 w-[25rem] md:w-[31.25rem] "
+      >
         <Card1 />
-      </div>
-      <div className="absolute top-48 w-[25rem] md:w-[31.25rem] ">
+      </AnimationChildContainer>
+      <AnimationChildContainer
+        offsetY={120}
+        className="absolute top-48 w-[25rem] md:w-[31.25rem] "
+      >
         <Card2 />
-      </div>
-    </div>
+      </AnimationChildContainer>
+    </AnimationParentContainer>
   );
 };
 export const CardsMain = () => {
