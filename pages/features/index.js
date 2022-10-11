@@ -9,7 +9,7 @@ const Features = () => {
   return (
     <div>
       <Hero />
-      <div className="px-5  md:px-20  2xl:px-60">
+      <div className="px-5 pt-20 md:px-20  2xl:px-60">
         <FeaturesList />
         <AllInOneBank />
         <ChooseCards />

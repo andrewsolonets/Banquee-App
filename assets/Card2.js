@@ -1,6 +1,6 @@
 import * as React from "react";
 
-function Card2(props) {
+function ImageCard2(props) {
   return (
     <svg
       viewBox="0 0 500 301"
@@ -175,4 +175,4 @@ function Card2(props) {
   );
 }
 
-export default Card2;
+export default ImageCard2;

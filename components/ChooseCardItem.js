@@ -7,6 +7,7 @@ export const ChooseCardItem = ({
   badgeName,
   price,
   descr,
+  big = true,
   title,
   small = false,
 }) => {
@@ -21,14 +22,16 @@ export const ChooseCardItem = ({
         )}
       </div>
       <div className="flex flex-col gap-4 text-center">
-        <div className="flex items-center justify-center gap-2">
-          <h4 className="font-heading  text-4xl font-bold leading-tight tracking-tight">
-            {price}
-          </h4>
-          {price !== "Free" && (
-            <span className="self-end py-1 text-black-txt/50">per month</span>
-          )}
-        </div>
+        {big && (
+          <div className="flex items-center justify-center gap-2">
+            <h4 className="font-heading  text-4xl font-bold leading-tight tracking-tight">
+              {price}
+            </h4>
+            {price !== "Free" && (
+              <span className="self-end py-1 text-black-txt/50">per month</span>
+            )}
+          </div>
+        )}
 
         <p className={`${small ? "text-sm" : "text-lg"} text-black-txt/50`}>
           {descr}
@@ -36,7 +39,7 @@ export const ChooseCardItem = ({
       </div>
 
       {image}
-      <ButtonS special="w-full">Get started</ButtonS>
+      {big && <ButtonS special="w-full">Get started</ButtonS>}
     </div>
   );
 };

@@ -1,3 +1,5 @@
+import { AnimationContainer } from "./AnimationContainer";
+
 export const HeroSection = ({
   smallText,
   heading,
@@ -11,16 +13,16 @@ export const HeroSection = ({
     >
       <div className="flex flex-col  items-center gap-8">
         <div className="flex flex-col items-center justify-center gap-4 lg:justify-start">
-          <div
+          <AnimationContainer
             className={`flex flex-col text-center lg:text-left ${headingStyles} items-left justify-center text-6xl lg:items-start xl:gap-6 2xl:gap-2`}
           >
             <p className="text-center text-xl lg:text-left">{smallText}</p>
             <h1
-              className={` font-heading  text-[2.5rem] leading-tight tracking-tight sm:text-5xl md:text-6xl`}
+              className={` font-heading  text-[2.5rem] leading-tight tracking-tight sm:text-5xl md:text-6xl lg:text-7xl`}
             >
               {heading}
             </h1>
-          </div>
+          </AnimationContainer>
         </div>
       </div>
       {rightContent}

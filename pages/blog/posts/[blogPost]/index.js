@@ -1,12 +1,12 @@
 import { useRouter } from "next/router";
-import { blogPosts } from "../../../utils/content";
+import { blogPosts } from "../../../../utils/content";
 import Image from "next/image";
-import { BadgeL, BadgeS } from "../../../components/Badge";
-import TwitterIcon from "../../../assets/TwitterIcon";
-import FacebookIcon from "../../../assets/FacebookIcon";
-import InstaIcon from "../../../assets/InstaIcon";
-import { ShareSection } from "../../../components/Share";
-import { Blog } from "../../MainPage/Blog";
+import { BadgeL, BadgeS } from "../../../../components/Badge";
+import TwitterIcon from "../../../../assets/TwitterIcon";
+import FacebookIcon from "../../../../assets/FacebookIcon";
+import InstaIcon from "../../../../assets/InstaIcon";
+import { ShareSection } from "../../../../components/Share";
+import { Blog } from "../../../MainPage/Blog";
 
 const BlogPost = ({ blogPostData }) => {
   const router = useRouter();
@@ -19,7 +19,7 @@ const BlogPost = ({ blogPostData }) => {
           <div className="flex gap-1">
             {blogPostData.categories.map((el, i) => (
               <span
-                className="rounded-md bg-primary-light px-3 py-1 font-medium text-primary"
+                className="rounded-md bg-primary-light px-3 py-1 font-medium capitalize text-primary"
                 key={i}
               >
                 {el}

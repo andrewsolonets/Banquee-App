@@ -2,11 +2,12 @@ import SupportIcon from "../../assets/SupportIcon";
 import { HelpSection } from "../../components/HelpSection";
 import { faqContent1, faqContent2, faqContent3 } from "../../utils/content";
 import { Link } from "react-scroll";
+import { AnimationContainer } from "../../components/AnimationContainer";
 
 export const MainSupport = () => {
   return (
     <section className="row flex w-full items-start justify-start gap-32">
-      <div className="sticky top-20 hidden w-1/4 flex-col gap-8 rounded-xl bg-white-bgMuted p-8 lg:flex">
+      <AnimationContainer className="sticky top-20 hidden w-1/4 flex-col gap-8 rounded-xl bg-white-bgMuted p-8 lg:flex">
         <h6 className="font-heading text-lg leading-tight tracking-tight">
           Categories
         </h6>
@@ -42,7 +43,7 @@ export const MainSupport = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </AnimationContainer>
       <div className="flex  flex-1 flex-col gap-32">
         <HelpSection
           icon={<SupportIcon className="w-7 fill-primary" />}

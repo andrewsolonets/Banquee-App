@@ -1,10 +1,11 @@
 import SupportIcon from "../assets/SupportIcon";
 import { Accordion } from "./Accordion";
+import { AnimationContainer } from "./AnimationContainer";
 import { BadgeL } from "./Badge";
 
 export const HelpSection = ({ heading, items, icon, id }) => {
   return (
-    <div
+    <AnimationContainer
       className="flex w-full flex-col  items-center gap-10 md:items-start lg:gap-16"
       id={id}
     >
@@ -19,6 +20,6 @@ export const HelpSection = ({ heading, items, icon, id }) => {
           <Accordion title={el.title} content={el.content} key={i} />
         ))}
       </div>
-    </div>
+    </AnimationContainer>
   );
 };

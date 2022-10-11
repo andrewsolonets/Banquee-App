@@ -3,6 +3,7 @@ import { CardsCompare } from "../../components/CardStack";
 import { CtaMini } from "../../components/CtaMini";
 import { HeroSection } from "../../components/Hero";
 import { MainSupport } from "./MainSupport";
+import { motion } from "framer-motion";
 
 const SupportPage = () => {
   return (
@@ -14,7 +15,15 @@ const SupportPage = () => {
             How can <br /> we help you?
           </span>
         }
-        rightContent={<SupportMobile />}
+        rightContent={
+          <motion.div
+            initial={{ y: 300 }}
+            animate={{ y: 0 }}
+            transition={{ ease: "easeOut", duration: 0.8 }}
+          >
+            <SupportMobile />
+          </motion.div>
+        }
         special={"pt-20 items-center lg:items-start  max-h-[35rem]"}
         headingStyles={"mt-5"}
       />

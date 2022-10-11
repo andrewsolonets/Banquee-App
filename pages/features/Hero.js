@@ -1,10 +1,11 @@
+import { AnimationContainer } from "../../components/AnimationContainer";
 import { ButtonM, ButtonTextM } from "../../components/Button";
 import { CardsFeatures } from "./CardsFeatures";
 
 export const Hero = () => {
   return (
     <section className="relative flex flex-col items-center gap-32 overflow-hidden bg-primary-light pt-20 pb-[20rem] md:pt-32 md:pb-[28rem]">
-      <div className="flex flex-col items-center gap-8">
+      <AnimationContainer className="flex flex-col items-center gap-8">
         <div className="flex flex-col items-center justify-center gap-4">
           <div className="flex flex-col items-center justify-center text-6xl xl:gap-6 2xl:gap-2">
             <p className="text-xl">Features</p>
@@ -21,7 +22,7 @@ export const Hero = () => {
           <ButtonM>Open Account</ButtonM>
           <ButtonTextM>Compare Cards</ButtonTextM>
         </div>
-      </div>
+      </AnimationContainer>
       <CardsFeatures />
     </section>
   );

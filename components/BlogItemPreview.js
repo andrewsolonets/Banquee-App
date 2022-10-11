@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const BlogItemPreview = ({ title, img, txt, categories, id }) => {
   return (
-    <Link href={`/blog/${id}`}>
+    <Link href={`/blog/posts/${id}`}>
       <div className="flex w-full cursor-pointer flex-col gap-6">
         <div className="relative h-72 2xl:h-80 ">
           <Image
@@ -21,7 +21,7 @@ export const BlogItemPreview = ({ title, img, txt, categories, id }) => {
         <div className="flex gap-2">
           {categories.map((el, i) => (
             <span
-              className="rounded-md bg-white-bgMuted px-3 py-1 font-medium"
+              className="rounded-md  bg-white-bgMuted px-3 py-1 font-medium capitalize"
               key={i}
             >
               {el}

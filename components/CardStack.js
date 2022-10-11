@@ -56,10 +56,27 @@ export const CardsMain = () => {
 
 export const CardsCompare = () => {
   return (
-    <div className="relative flex h-[31.2rem] w-[20rem] items-start justify-center 2xl:h-[34rem] ">
-      <CardRotated className="absolute -bottom-[10rem] right-0 w-[12rem] rotate-[10deg] lg:bottom-0 xl:w-[17rem] 2xl:w-[18.75rem]" />
-      <Card1Rotated className="absolute z-10 w-[12rem] xl:w-[17rem] 2xl:w-[18.75rem]" />
-      <Card2Rotated className="absolute -bottom-[10rem] left-0 w-[12rem] rotate-[-10deg] lg:bottom-0 xl:w-[17rem] 2xl:w-[18.75rem]" />
-    </div>
+    <motion.div className="relative flex h-[31.2rem] w-[20rem] items-start justify-center lg:w-[25rem]  2xl:h-[34rem]">
+      <CardRotated
+        initial={{ x: -40, y: 300, rotate: 0 }}
+        animate={{ rotate: "10deg", x: 0, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="absolute -bottom-[10rem] right-0 w-[12rem] lg:bottom-0 xl:w-[17rem] 2xl:w-[18.75rem]"
+      />
+
+      <Card1Rotated
+        initial={{ y: 300 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="absolute z-10 w-[12rem] xl:w-[17rem] 2xl:w-[18.75rem]"
+      />
+
+      <Card2Rotated
+        initial={{ x: 40, y: 300, rotate: 0 }}
+        animate={{ rotate: "-10deg", x: 0, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="absolute -bottom-[10rem] left-0 w-[12rem]  lg:bottom-0 xl:w-[17rem] 2xl:w-[18.75rem]"
+      />
+    </motion.div>
   );
 };

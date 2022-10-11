@@ -108,6 +108,7 @@ export const AnimationContainer = ({
   once = true,
   duration = 0.7,
   variant = "vertical",
+  id,
 }) => {
   const vertical = {
     offscreen: {
@@ -140,6 +141,7 @@ export const AnimationContainer = ({
 
   return (
     <motion.div
+      id={id}
       className={className}
       initial="offscreen"
       whileInView="onscreen"

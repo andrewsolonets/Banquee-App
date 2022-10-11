@@ -1,6 +1,7 @@
 import CardImage from "../../assets/Card";
 import Card1 from "../../assets/Card1";
-import Card2 from "../../assets/Card2";
+import ImageCard2 from "../../assets/Card2";
+import { AnimationContainer } from "../../components/AnimationContainer";
 import { ChooseCardItem } from "../../components/ChooseCardItem";
 import { ComparingTable } from "../../components/ComparingTable";
 import {
@@ -12,7 +13,7 @@ import {
 export const MainCompare = () => {
   return (
     <div className="flex flex-col items-center gap-24 px-4 py-9 lg:items-end lg:px-36">
-      <div className="flex flex-col gap-16 lg:flex-row xl:max-w-[48rem] 2xl:max-w-[62.5rem]">
+      <AnimationContainer className="flex flex-col gap-16 lg:flex-row xl:max-w-[48rem] 2xl:max-w-[62.5rem]">
         <ChooseCardItem
           small={true}
           image={<CardImage className="w-[13rem] 2xl:w-[17rem]" />}
@@ -32,13 +33,13 @@ export const MainCompare = () => {
         />
         <ChooseCardItem
           small={true}
-          image={<Card2 className="w-[13rem] 2xl:w-[17rem]" />}
+          image={<ImageCard2 className="w-[13rem] 2xl:w-[17rem]" />}
           badge={false}
           title={"Gold"}
           price={"10"}
           descr={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
         />
-      </div>
+      </AnimationContainer>
       <ComparingTable heading={"Credit Cards"} data={compareTable1} />
       <ComparingTable heading={"Bank Account"} data={compareTable2} />
       <ComparingTable heading={"Extra Features"} data={compareTable3} />
