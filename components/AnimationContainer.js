@@ -5,7 +5,7 @@ export const AnimationParentContainer = ({
   className,
   direction = "x",
   amount = 0.2,
-  once = false,
+  once = true,
   staggerChildren = 0.3,
   stagDirection = 1,
   delay = 0,

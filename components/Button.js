@@ -3,7 +3,7 @@ import ArrowRight from "../assets/ArrowRight";
 export const ButtonS = ({ children, bgColor = "bg-primary", special }) => {
   return (
     <button
-      className={`px-4 py-2 ${bgColor} box-border rounded-md font-heading tracking-tight ${special} text-white`}
+      className={`px-4 py-2 ${bgColor} box-border hover:${bgColor} rounded-md font-heading tracking-tight ${special} text-white`}
     >
       {children}
     </button>
@@ -13,7 +13,7 @@ export const ButtonS = ({ children, bgColor = "bg-primary", special }) => {
 export const ButtonM = ({ children, bgColor = "bg-primary" }) => {
   return (
     <button
-      className={`px-6 py-3 ${bgColor} box-border rounded-md  font-heading text-lg tracking-tight  text-white`}
+      className={`px-6 py-3 ${bgColor} box-border rounded-md   font-heading text-lg tracking-tight  text-white`}
     >
       {children}
     </button>

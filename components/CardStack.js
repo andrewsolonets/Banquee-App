@@ -43,13 +43,23 @@ export const CardStack = () => {
 export const CardsMain = () => {
   return (
     <div className="relative flex h-[25rem] w-[25rem] items-center justify-center lg:h-[36rem] 2xl:justify-start">
-      <div className="absolute rotate-[12deg] xl:-top-12 xl:left-28 2xl:-top-8 2xl:left-12">
+      <motion.div
+        initial={{ y: 150, rotate: "-14deg", opacity: 0 }}
+        animate={{ y: 0, rotate: "12deg", opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        className="absolute  xl:-top-12 xl:left-28 2xl:-top-8 2xl:left-12"
+      >
         <CardRotated className="w-[11rem] md:w-[17rem] 2xl:w-[18.75rem]" />
-      </div>
+      </motion.div>
 
-      <div className="absolute">
+      <motion.div
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: 0, rotate: 0, opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        className="absolute"
+      >
         <Card1Rotated className="w-[11rem] md:w-[17rem] 2xl:w-[18.75rem]" />
-      </div>
+      </motion.div>
     </div>
   );
 };

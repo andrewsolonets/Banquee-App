@@ -3,11 +3,11 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import DownArrow from "../assets/DownArrow";
 import { ChooseCardItem } from "./ChooseCardItem";
-import CardImage from "../assets/Card";
-import Card1 from "../assets/Card1";
-import { Card2 } from "./Card";
-import ImageCard2 from "../assets/Card2";
+import card2 from "../assets/card-1.png";
+import card3 from "../assets/card-2.png";
+import cardImage from "../assets/card.png";
 import ArrowRight from "../assets/ArrowRight";
+import Image from "next/image";
 
 export const Header = () => {
   const router = useRouter();
@@ -54,7 +54,13 @@ export const Header = () => {
                   <ChooseCardItem
                     small={true}
                     big={false}
-                    image={<CardImage className="w-[13rem] 2xl:w-[17rem]" />}
+                    image={
+                      <Image
+                        src={cardImage}
+                        alt="card1"
+                        className="w-[13rem] 2xl:w-[17rem]"
+                      />
+                    }
                     badge={true}
                     title={"Basic"}
                     badgeName={"Popular"}
@@ -65,7 +71,13 @@ export const Header = () => {
                   />
                   <ChooseCardItem
                     small={true}
-                    image={<Card1 className="w-[13rem] 2xl:w-[17rem]" />}
+                    image={
+                      <Image
+                        src={card2}
+                        alt="card1"
+                        className="w-[13rem] 2xl:w-[17rem]"
+                      />
+                    }
                     badge={false}
                     big={false}
                     title={"Premium"}
@@ -76,7 +88,13 @@ export const Header = () => {
                   />
                   <ChooseCardItem
                     small={true}
-                    image={<ImageCard2 className="w-[13rem] 2xl:w-[17rem]" />}
+                    image={
+                      <Image
+                        src={card3}
+                        alt="card3"
+                        className="w-[13rem] 2xl:w-[17rem]"
+                      />
+                    }
                     badge={false}
                     big={false}
                     title={"Gold"}

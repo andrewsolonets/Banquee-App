@@ -1,5 +1,6 @@
 import CardImage from "../../assets/Card";
 import Card1 from "../../assets/Card1";
+import ImageCard2 from "../../assets/Card2";
 import Card2 from "../../assets/Card2";
 import { AnimationContainer } from "../../components/AnimationContainer";
 import { ButtonM, ButtonS } from "../../components/Button";
@@ -41,7 +42,7 @@ export const ChooseCards = () => {
           descr={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
         />
         <ChooseCardItem
-          image={<Card2 className="w-[19rem] 2xl:w-[22rem]" />}
+          image={<ImageCard2 className="w-[19rem] 2xl:w-[22rem]" />}
           badge={false}
           title={"Gold"}
           price={"10"}
