@@ -1,23 +1,19 @@
-import { Cta } from "../components/CTA";
+import { Cta } from "../core/CTA";
 import { Faq } from "../components/Faq";
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
+
+import { Blog } from "../components/MainPage/Blog";
+import { Integration } from "../components/MainPage/Integration";
+import { MainSection1 } from "../components/MainPage/MainSection1";
+import { MainSection2 } from "../components/MainPage/MainSection2";
+import { MainSection3 } from "../components/MainPage/MainSection3";
+import { MainSection4 } from "../components/MainPage/MainSection4";
+import { Notifications } from "../components/MainPage/NotificationsSection";
+import { PerfectCard } from "../components/MainPage/PerfectCard";
+import { Reviews } from "../components/MainPage/Reviews";
 
 import SizeObserver from "../utils/size-observer";
-import { Blog } from "./MainPage/Blog";
 
-import { Integration } from "./MainPage/Integration";
-
-import { MainSection1 } from "./MainPage/MainSection1";
-import { MainSection2 } from "./MainPage/MainSection2";
-import { MainSection3 } from "./MainPage/MainSection3";
-
-import { MainSection4 } from "./MainPage/MainSection4";
-import { Notifications } from "./MainPage/NotificationsSection";
-import { PerfectCard } from "./MainPage/PerfectCard";
-import { Reviews } from "./MainPage/Reviews";
-
-export default function Home() {
+function Home() {
   return (
     <>
       <div className="w-full px-5  md:px-20  2xl:px-60">
@@ -41,3 +37,5 @@ export default function Home() {
     </>
   );
 }
+
+export default Home;

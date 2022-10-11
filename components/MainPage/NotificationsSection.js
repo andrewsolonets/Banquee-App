@@ -1,9 +1,9 @@
 import AppIcon from "../../assets/AppIcon";
 import TickIcon from "../../assets/TickIcon";
-import { AnimationContainer } from "../../components/AnimationContainer";
-import { BadgeS } from "../../components/Badge";
-import { ButtonTextM } from "../../components/Button";
-import { NotificationCard } from "../../components/NotificationCard";
+import { AnimationContainer } from "../../core/AnimationContainer";
+import { BadgeS } from "../../core/Badge";
+import { ButtonTextM } from "../../core/Button";
+import { NotificationCard } from "../../core/NotificationCard";
 import { notifications } from "../../utils/content";
 
 export const Notifications = () => {

@@ -1,8 +1,9 @@
 import SupportMobile from "../../assets/SupportMobile";
 import { CardsCompare } from "../../components/CardStack";
-import { CtaMini } from "../../components/CtaMini";
+import { CtaMini } from "../../core/CTAMini";
 import { HeroSection } from "../../components/Hero";
-import { MainSupport } from "./MainSupport";
+import { MainSupport } from "../../components/support/MainSupport";
+
 import { motion } from "framer-motion";
 
 const SupportPage = () => {

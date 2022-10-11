@@ -7,8 +7,8 @@ import {
   AnimationChildContainer,
   AnimationContainer,
   AnimationParentContainer,
-} from "./AnimationContainer";
-import { Card2 } from "./Card";
+} from "../core/AnimationContainer";
+import { Card2 } from "../core/Card";
 
 export const ShoppingItems = ({ special, cardSize }) => {
   return (

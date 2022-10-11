@@ -1,5 +1,5 @@
 import CardImage from "../assets/Card";
-import { ButtonS } from "./Button";
+import { ButtonS } from "../core/Button";
 
 export const ChooseCardItem = ({
   image,

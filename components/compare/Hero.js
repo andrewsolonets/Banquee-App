@@ -1,4 +1,4 @@
-import { CardsCompare } from "../../components/CardStack";
+import { CardsCompare } from "../CardStack";
 
 export const HeroCompare = () => {
   return (

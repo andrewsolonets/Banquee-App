@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { AnimationContainer } from "../../components/AnimationContainer";
-import { BlogItemPreview } from "../../components/BlogItemPreview";
-import { CategoriesList } from "../../components/CategoriesList";
+import { AnimationContainer } from "../../core/AnimationContainer";
+import { BlogItemPreview } from "../../core/BlogItemPreview";
+import { CategoriesList } from "../CategoriesList";
 import { blogPosts } from "../../utils/content";
 
 export const MainBlog = () => {

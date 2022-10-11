@@ -16,7 +16,7 @@ import image2 from "../assets/image-2.png";
 import image4 from "../assets/image4.png";
 import image5 from "../assets/image5.png";
 import image6 from "../assets/image6.png";
-import { BadgeS } from "../components/Badge";
+import { BadgeS } from "../core/Badge";
 import TickIcon from "../assets/TickIcon";
 import VirtualIcon from "../assets/VirtualIcon";
 import MoneyEuro from "../assets/MoneyEuro";

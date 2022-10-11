@@ -1,5 +1,5 @@
-import { AnimationContainer } from "../../components/AnimationContainer";
-import { ButtonM, ButtonTextM } from "../../components/Button";
+import { AnimationContainer } from "../../core/AnimationContainer";
+import { ButtonM, ButtonTextM } from "../../core/Button";
 import { CardsFeatures } from "./CardsFeatures";
 
 export const Hero = () => {

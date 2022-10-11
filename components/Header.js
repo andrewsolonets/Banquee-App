@@ -1,4 +1,4 @@
-import { ButtonS, ButtonTextM } from "./Button";
+import { ButtonS, ButtonTextM } from "../core/Button";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import DownArrow from "../assets/DownArrow";

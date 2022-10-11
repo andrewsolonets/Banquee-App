@@ -1,9 +1,7 @@
 import CardImage from "../../assets/Card";
 import Card1 from "../../assets/Card1";
 import ImageCard2 from "../../assets/Card2";
-import Card2 from "../../assets/Card2";
-import { AnimationContainer } from "../../components/AnimationContainer";
-import { ButtonM, ButtonS } from "../../components/Button";
+import { AnimationContainer } from "../../core/AnimationContainer";
 import { ChooseCardItem } from "../../components/ChooseCardItem";
 
 export const ChooseCards = () => {

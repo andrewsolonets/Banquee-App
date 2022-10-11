@@ -1,9 +1,8 @@
-import { ButtonM, ButtonTextM } from "../../components/Button";
-
-import { BadgeS } from "../../components/Badge";
-import TickIcon from "../../assets/TickIcon.js";
-import { CardsMain } from "../../components/CardStack";
+import TickIcon from "../../assets/TickIcon";
+import { BadgeS } from "../../core/Badge";
+import { ButtonM, ButtonTextM } from "../../core/Button";
 import { pinPoints } from "../../utils/content";
+import { CardsMain } from "../CardStack";
 
 export const MainSection1 = () => {
   return (

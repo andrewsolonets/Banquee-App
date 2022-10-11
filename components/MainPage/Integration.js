@@ -1,7 +1,7 @@
 import TickIcon from "../../assets/TickIcon";
-import { AnimationContainer } from "../../components/AnimationContainer";
-import { BadgeL } from "../../components/Badge";
-import ClientLogos from "../../components/client-logos";
+import { AnimationContainer } from "../../core/AnimationContainer";
+import { BadgeL } from "../../core/Badge";
+import ClientLogos from "../../core/client-logos";
 
 export const Integration = () => {
   return (

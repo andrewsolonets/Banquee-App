@@ -1,7 +1,8 @@
 import Image from "next/image";
 import TickIcon from "../../assets/TickIcon";
-import { BadgeS } from "../../components/Badge";
+
 import screen1 from "../../assets/app1.png";
+import { BadgeS } from "../../core/Badge";
 
 export const FeatureContainer = ({ children }) => (
   <div className="flex h-auto min-h-screen w-full flex-col items-center justify-start gap-16 md:flex-row  md:items-start  md:justify-between md:gap-20 lg:gap-0">

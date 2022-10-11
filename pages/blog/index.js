@@ -1,5 +1,5 @@
-import { AnimationContainer } from "../../components/AnimationContainer";
-import { MainBlog } from "./MainBlog";
+import { AnimationContainer } from "../../core/AnimationContainer";
+import { MainBlog } from "../../components/blog/MainBlog";
 
 const BlogPage = () => {
   return (

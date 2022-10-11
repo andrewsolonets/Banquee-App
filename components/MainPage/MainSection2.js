@@ -1,9 +1,9 @@
 import Image from "next/image";
-import { Card } from "../../components/Card";
+import { Card } from "../../core/Card";
 import screen1 from "../../assets/app1.png";
 
 import { cardContent } from "../../utils/content";
-import { AnimationContainer } from "../../components/AnimationContainer";
+import { AnimationContainer } from "../../core/AnimationContainer";
 
 export const MainSection2 = () => {
   return (

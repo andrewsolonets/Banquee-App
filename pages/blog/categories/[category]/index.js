@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { Link } from "react-scroll";
-import { AnimationContainer } from "../../../../components/AnimationContainer";
-import { BlogItemPreview } from "../../../../components/BlogItemPreview";
+import { AnimationContainer } from "../../../../core/AnimationContainer";
+import { BlogItemPreview } from "../../../../core/BlogItemPreview";
 import { CategoriesList } from "../../../../components/CategoriesList";
 import { blogPosts } from "../../../../utils/content";
 

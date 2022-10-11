@@ -1,6 +1,7 @@
-import { AnimationContainer } from "../../components/AnimationContainer";
-import { BlogItemPreview } from "../../components/BlogItemPreview";
-import { ButtonTextM } from "../../components/Button";
+import Link from "next/link";
+import { AnimationContainer } from "../../core/AnimationContainer";
+import { BlogItemPreview } from "../../core/BlogItemPreview";
+import { ButtonTextM } from "../../core/Button";
 import { blogPosts } from "../../utils/content";
 
 export const Blog = ({ heading = "Blog" }) => {
@@ -12,8 +13,10 @@ export const Blog = ({ heading = "Blog" }) => {
             {heading}
           </h2>
         </AnimationContainer>
-        <AnimationContainer>
-          <ButtonTextM>All Articles</ButtonTextM>
+        <AnimationContainer className="flex items-center justify-center">
+          <Link href="/blog">
+            <ButtonTextM>All Articles</ButtonTextM>
+          </Link>
         </AnimationContainer>
       </div>
       <AnimationContainer className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">

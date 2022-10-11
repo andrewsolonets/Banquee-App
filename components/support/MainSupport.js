@@ -1,8 +1,8 @@
 import SupportIcon from "../../assets/SupportIcon";
-import { HelpSection } from "../../components/HelpSection";
+import { HelpSection } from "../HelpSection";
 import { faqContent1, faqContent2, faqContent3 } from "../../utils/content";
 import { Link } from "react-scroll";
-import { AnimationContainer } from "../../components/AnimationContainer";
+import { AnimationContainer } from "../../core/AnimationContainer";
 
 export const MainSupport = () => {
   return (

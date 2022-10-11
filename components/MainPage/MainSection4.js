@@ -3,9 +3,9 @@ import BicycleIcon from "../../assets/Bicycle";
 import CameraIcon from "../../assets/Camera";
 import LaptopIcon from "../../assets/Laptop";
 import PlusIcon from "../../assets/PlusIcon";
-import { AnimationContainer } from "../../components/AnimationContainer";
-import { ButtonTextM } from "../../components/Button";
-import { Card2 } from "../../components/Card";
+import { AnimationContainer } from "../../core/AnimationContainer";
+import { ButtonTextM } from "../../core/Button";
+import { Card2 } from "../../core/Card";
 import { ShoppingItems } from "../../components/ShoppingItems";
 
 export const MainSection4 = () => {

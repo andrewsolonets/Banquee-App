@@ -1,7 +1,7 @@
 import TickIcon from "../../assets/TickIcon";
-import { AnimationContainer } from "../../components/AnimationContainer";
-import { BadgeS } from "../../components/Badge";
-import { TransactionCard } from "../../components/TransactionCard";
+import { AnimationContainer } from "../../core/AnimationContainer";
+import { BadgeS } from "../../core/Badge";
+import { TransactionCard } from "../../core/TransactionCard";
 import { transactions } from "../../utils/content";
 
 export const MainSection3 = () => {

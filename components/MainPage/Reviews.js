@@ -1,7 +1,7 @@
 import StarIcon from "../../assets/StarIcon";
-import { AnimationContainer } from "../../components/AnimationContainer";
-import { BadgeS } from "../../components/Badge";
-import { ReviewItem } from "../../components/ReviewItem";
+import { AnimationContainer } from "../../core/AnimationContainer";
+import { BadgeS } from "../../core/Badge";
+import { ReviewItem } from "../../core/ReviewItem";
 import { reviewData } from "../../utils/content";
 
 export const Reviews = () => {

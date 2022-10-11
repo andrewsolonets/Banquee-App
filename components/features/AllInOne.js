@@ -1,10 +1,9 @@
 import Image from "next/image";
 import screen3 from "../../assets/app3.png";
-import { AnimationContainer } from "../../components/AnimationContainer";
-import ClientLogos, { LogosSmall } from "../../components/client-logos";
-import { NotificationCard } from "../../components/NotificationCard";
-import { ShoppingItems } from "../../components/ShoppingItems";
-import { TransactionCard } from "../../components/TransactionCard";
+import { AnimationContainer } from "../../core/AnimationContainer";
+import { LogosSmall } from "../../core/client-logos";
+import { ShoppingItems } from "../ShoppingItems";
+import { TransactionCard } from "../../core/TransactionCard";
 import { transactions } from "../../utils/content";
 import { CardsFeatures2 } from "./CardsFeatures";
 

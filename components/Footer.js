@@ -1,4 +1,4 @@
-import { AnimationContainer } from "./AnimationContainer";
+import { AnimationContainer } from "../core/AnimationContainer";
 
 export const Footer = () => {
   return (

@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import {
   AnimationChildContainer,
   AnimationParentContainer,
-} from "./AnimationContainer";
+} from "../core/AnimationContainer";
 
 export const CardStack = () => {
   return (

@@ -13,7 +13,7 @@ export const ButtonS = ({ children, bgColor = "bg-primary", special }) => {
 export const ButtonM = ({ children, bgColor = "bg-primary" }) => {
   return (
     <button
-      className={`px-6 py-3 ${bgColor} box-border rounded-md   font-heading text-lg tracking-tight  text-white`}
+      className={`px-6 py-3 ${bgColor} box-border rounded-md font-heading text-lg tracking-tight  text-white`}
     >
       {children}
     </button>

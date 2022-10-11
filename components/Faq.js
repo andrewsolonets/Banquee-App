@@ -1,11 +1,11 @@
 import EmailIcon from "../assets/email";
 import PhoneIcon from "../assets/PhoneIcon";
-import { Accordion } from "./Accordion";
-import { BadgeL } from "./Badge";
-import { ButtonTextM } from "./Button";
+import { Accordion } from "../core/Accordion";
+import { BadgeL } from "../core/Badge";
+import { ButtonTextM } from "../core/Button";
 import { motion, LayoutGroup } from "framer-motion";
 import { faqContent } from "../utils/content";
-import { AnimationContainer } from "./AnimationContainer";
+import { AnimationContainer } from "../core/AnimationContainer";
 
 export const Faq = () => {
   return (

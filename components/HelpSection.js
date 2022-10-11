@@ -1,7 +1,7 @@
 import SupportIcon from "../assets/SupportIcon";
-import { Accordion } from "./Accordion";
-import { AnimationContainer } from "./AnimationContainer";
-import { BadgeL } from "./Badge";
+import { Accordion } from "../core/Accordion";
+import { AnimationContainer } from "../core/AnimationContainer";
+import { BadgeL } from "../core/Badge";
 
 export const HelpSection = ({ heading, items, icon, id }) => {
   return (

@@ -1,8 +1,8 @@
-import { Hero } from "./Hero";
-import FeaturesList from "./FeaturesList";
-import { AllInOneBank } from "./AllInOne";
-import { ChooseCards } from "./ChooseCard";
-import { Cta } from "../../components/CTA";
+import { Hero } from "../../components/features/Hero";
+import { AllInOneBank } from "../../components/features/AllInOne";
+import FeaturesList from "../../components/features/FeaturesList";
+import { ChooseCards } from "../../components/features/ChooseCard";
+import { Cta } from "../../core/CTA";
 import { Faq } from "../../components/Faq";
 
 const Features = () => {

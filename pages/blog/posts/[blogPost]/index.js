@@ -1,12 +1,9 @@
 import { useRouter } from "next/router";
 import { blogPosts } from "../../../../utils/content";
 import Image from "next/image";
-import { BadgeL, BadgeS } from "../../../../components/Badge";
-import TwitterIcon from "../../../../assets/TwitterIcon";
-import FacebookIcon from "../../../../assets/FacebookIcon";
-import InstaIcon from "../../../../assets/InstaIcon";
-import { ShareSection } from "../../../../components/Share";
-import { Blog } from "../../../MainPage/Blog";
+
+import { ShareSection } from "../../../../core/Share";
+import { Blog } from "../../../../components/MainPage/Blog";
 
 const BlogPost = ({ blogPostData }) => {
   const router = useRouter();
