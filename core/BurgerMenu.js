@@ -15,11 +15,11 @@ const MenuButton = ({
   const top = {
     closed: {
       rotate: 0,
-      translateY: 0,
+      y: 0,
     },
     opened: {
       rotate: 45,
-      translateY: 2,
+      y: 2,
     },
   };
   const center = {
@@ -33,11 +33,11 @@ const MenuButton = ({
   const bottom = {
     closed: {
       rotate: 0,
-      translateY: 0,
+      y: 0,
     },
     opened: {
       rotate: -45,
-      translateY: -2,
+      y: -2,
     },
   };
   lineProps = {

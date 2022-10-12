@@ -33,7 +33,7 @@ export const MobileOverlay = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="absolute top-0 bottom-0 right-0 left-0 z-50 bg-black-txt/30"
+      className="fixed top-0 bottom-0 right-0 left-0 z-50 bg-black-txt/30"
     ></motion.div>
   );
 };
