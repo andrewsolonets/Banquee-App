@@ -22,7 +22,7 @@ const SupportPage = () => {
             animate={{ y: 0 }}
             transition={{ ease: "easeOut", duration: 0.8 }}
           >
-            <SupportMobile />
+            <SupportMobile className=" w-[100%] sm:w-96" />
           </motion.div>
         }
         special={"pt-20 items-center lg:items-start  max-h-[35rem]"}

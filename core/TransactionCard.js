@@ -7,7 +7,7 @@ export const TransactionCard = ({
   heading,
   descr,
   price,
-  w = "w-96",
+  w = "sm:w-96 w-[100%] ",
 }) => {
   return (
     <AnimationContainer

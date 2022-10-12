@@ -9,7 +9,7 @@ export const HeroSection = ({
 }) => {
   return (
     <section
-      className={`relative flex flex-col gap-10 lg:flex-row lg:gap-0  ${special} lg:px-30 justify-between overflow-hidden bg-primary-light px-24 xl:px-36`}
+      className={`relative flex flex-col gap-10 lg:flex-row lg:gap-0  ${special} lg:px-30 justify-between overflow-hidden bg-primary-light px-5 sm:px-24 xl:px-36`}
     >
       <div className="flex flex-col  items-center gap-8">
         <div className="flex flex-col items-center justify-center gap-4 lg:justify-start">

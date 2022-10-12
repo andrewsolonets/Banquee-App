@@ -4,7 +4,7 @@ import { CardsFeatures } from "./CardsFeatures";
 
 export const Hero = () => {
   return (
-    <section className="relative flex flex-col items-center gap-32 overflow-hidden bg-primary-light pt-20 pb-[20rem] md:pt-32 md:pb-[28rem]">
+    <section className="relative flex flex-col items-center gap-32 overflow-hidden bg-primary-light px-5 pt-20 pb-[20rem] sm:px-0 md:pt-32 md:pb-[28rem]">
       <AnimationContainer className="flex flex-col items-center gap-8">
         <div className="flex flex-col items-center justify-center gap-4">
           <div className="flex flex-col items-center justify-center text-6xl xl:gap-6 2xl:gap-2">
@@ -18,7 +18,7 @@ export const Hero = () => {
             vitae et leo duis ut diam.
           </p>
         </div>
-        <div className="flex grow-0 items-center gap-8">
+        <div className="flex grow-0 flex-wrap items-center justify-center gap-8 sm:justify-start">
           <ButtonM>Open Account</ButtonM>
           <ButtonTextM>Compare Cards</ButtonTextM>
         </div>

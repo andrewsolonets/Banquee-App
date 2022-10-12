@@ -51,7 +51,7 @@ export const AllInOneBank = () => {
           </AnimationContainer>
         </div>
         <div className="flex w-full flex-wrap items-center justify-center gap-8  md:items-start md:justify-start lg:flex-nowrap">
-          <AnimationContainer className=" flex max-h-[34.5rem] w-full flex-col   items-center gap-14 overflow-hidden  rounded-3xl bg-white-bgMuted px-12 pb-20 pt-14 lg:w-1/3 lg:max-w-sm ">
+          <AnimationContainer className=" flex max-h-[34.5rem] w-full flex-col   items-center gap-14 overflow-hidden  rounded-3xl bg-white-bgMuted px-2 pb-20 pt-14 sm:px-12 lg:w-1/3 lg:max-w-sm ">
             <div className="flex flex-col  gap-2">
               <h3 className="text-center font-heading text-[2.5rem] leading-tight tracking-tight sm:text-3xl  md:text-4xl ">
                 Easy <br></br> integration
@@ -64,7 +64,7 @@ export const AllInOneBank = () => {
               <LogosSmall />
             </div>
           </AnimationContainer>
-          <AnimationContainer className="flex max-h-[34.5rem] w-full flex-col items-center gap-14 overflow-hidden rounded-3xl bg-white-bgMuted px-12 py-14 lg:w-1/3 lg:max-w-sm">
+          <AnimationContainer className="flex max-h-[34.5rem] w-full flex-col items-center gap-14 overflow-hidden rounded-3xl bg-white-bgMuted py-14  px-2 sm:px-12 lg:w-1/3 lg:max-w-sm">
             <div className="flex flex-col  gap-2">
               <h3 className="text-center font-heading text-[2.5rem] leading-tight tracking-tight sm:text-3xl  md:text-4xl ">
                 Saving <br></br>accounts
@@ -80,7 +80,7 @@ export const AllInOneBank = () => {
               />
             </div>
           </AnimationContainer>
-          <AnimationContainer className="flex  max-h-[34.5rem] w-full   flex-col  items-center gap-14 overflow-hidden rounded-3xl bg-white-bgMuted px-12 py-14 lg:w-1/3 lg:max-w-sm">
+          <AnimationContainer className="flex  max-h-[34.5rem] w-full   flex-col  items-center gap-14 overflow-hidden rounded-3xl bg-white-bgMuted  px-2 py-14 sm:px-12 lg:w-1/3 lg:max-w-sm">
             <div className="flex flex-col  gap-2">
               <h3 className="text-center font-heading text-[2.5rem] leading-tight tracking-tight sm:text-3xl  md:text-4xl ">
                 Instant transactions

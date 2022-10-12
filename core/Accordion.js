@@ -23,11 +23,6 @@ export const Accordion = ({ title, content }) => {
           className=""
         >
           <Plus1 className="w-[0.9rem]" />
-          {/* {isActive ? (
-            <Cross className="w-[0.9rem]" />
-          ) : (
-            <Plus1 className="w-[0.9rem]" />
-          )} */}
         </motion.div>
       </div>
 

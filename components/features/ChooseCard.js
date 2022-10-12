@@ -43,7 +43,7 @@ export const ChooseCards = () => {
           image={<ImageCard2 className="w-[19rem] 2xl:w-[22rem]" />}
           badge={false}
           title={"Gold"}
-          price={"10"}
+          price={"$10"}
           descr={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
         />
       </AnimationContainer>

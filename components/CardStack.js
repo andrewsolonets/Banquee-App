@@ -17,23 +17,23 @@ export const CardStack = () => {
       staggerChildren={0.3}
       amount={0.4}
       duration={0.1}
-      className="relative flex  h-[31.25rem] w-[25rem] flex-col md:w-[31.25rem]"
+      className="relative flex h-[31.25rem] w-[100%]  flex-col items-center  sm:w-[25rem] md:w-[31.25rem]"
     >
       <AnimationChildContainer
         offsetY={120}
-        className="absolute w-[25rem] md:w-[31.25rem]"
+        className="absolute w-[100%] sm:w-[25rem] md:w-[31.25rem]"
       >
         <CardImage />
       </AnimationChildContainer>
       <AnimationChildContainer
         offsetY={120}
-        className="absolute top-24 w-[25rem] md:w-[31.25rem] "
+        className="absolute top-24  w-[100%] sm:w-[25rem] md:w-[31.25rem] "
       >
         <Card1 />
       </AnimationChildContainer>
       <AnimationChildContainer
         offsetY={120}
-        className="absolute top-48 w-[25rem] md:w-[31.25rem] "
+        className="absolute top-48  w-[100%] sm:w-[25rem] md:w-[31.25rem] "
       >
         <Card2 />
       </AnimationChildContainer>
@@ -42,7 +42,7 @@ export const CardStack = () => {
 };
 export const CardsMain = () => {
   return (
-    <div className="relative flex h-[25rem] w-[25rem] items-center justify-center lg:h-[36rem] 2xl:justify-start">
+    <div className="relative flex h-[25rem] w-full items-center justify-center sm:w-[25rem] lg:h-[36rem] 2xl:justify-start">
       <motion.div
         initial={{ y: 150, rotate: "-14deg", opacity: 0 }}
         animate={{ y: 0, rotate: "12deg", opacity: 1 }}

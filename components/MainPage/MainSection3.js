@@ -39,7 +39,7 @@ export const MainSection3 = () => {
           </AnimationContainer>
         </div>
       </div>
-      <div className="flex max-h-96 flex-col gap-4 ">
+      <div className="flex max-h-96 w-full flex-col gap-4 sm:w-fit ">
         {transactions.map((el, i) => (
           <TransactionCard
             icon={el.icon}

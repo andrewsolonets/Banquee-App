@@ -16,18 +16,18 @@ import SizeObserver from "../utils/size-observer";
 function Home() {
   return (
     <>
-      <div className="w-full px-5  md:px-20  2xl:px-60">
+      <div className="w-full px-5 sm:px-10 lg:px-20  2xl:px-60">
         <MainSection1 />
         <MainSection2 />
       </div>
 
       <MainSection3 />
-      <div className="w-full border-b  border-grey px-5 md:px-20  2xl:px-60">
+      <div className="w-full border-b  border-grey px-5 sm:px-10 lg:px-20  2xl:px-60">
         <MainSection4 />
         <Notifications />
         <Integration />
       </div>
-      <div className="w-full border-b  border-grey px-5 md:px-20  2xl:px-60">
+      <div className="w-full border-b  border-grey px-5 sm:px-10 lg:px-20  2xl:px-60">
         <PerfectCard />
         <Reviews />
         <Cta />

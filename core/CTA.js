@@ -49,7 +49,7 @@ export const Cta = () => {
               </div>
             </div>
           </div>
-          <div className="flex w-full justify-center gap-4 md:justify-start">
+          <div className="flex w-full flex-wrap justify-center gap-4 md:justify-start">
             <GstoreIcon />
             <AppleStoreIcon />
           </div>

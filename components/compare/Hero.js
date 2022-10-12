@@ -2,10 +2,10 @@ import { CardsCompare } from "../CardStack";
 
 export const HeroCompare = () => {
   return (
-    <section className="relative flex  max-h-[26rem] items-start justify-between overflow-hidden bg-primary-light px-36 py-32">
+    <section className="relative flex  max-h-[26rem] items-start justify-between overflow-hidden bg-primary-light px-5 py-32 sm:px-36">
       <div className="flex flex-col items-center gap-8">
         <div className="flex flex-col items-center justify-start gap-4">
-          <div className="flex flex-col items-center justify-center text-6xl lg:items-start xl:gap-6 2xl:gap-2">
+          <div className="flex  flex-col items-center justify-center text-6xl lg:items-start xl:gap-6 2xl:gap-2">
             <p className="text-center leading-relaxed md:text-xl 2xl:text-2xl">
               Compare Cards
             </p>
