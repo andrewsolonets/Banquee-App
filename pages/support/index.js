@@ -5,6 +5,7 @@ import { HeroSection } from "../../components/Hero";
 import { MainSupport } from "../../components/support/MainSupport";
 
 import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 
 const SupportPage = () => {
   return (

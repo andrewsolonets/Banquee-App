@@ -15,7 +15,9 @@ export const Blog = ({ heading = "Blog" }) => {
         </AnimationContainer>
         <AnimationContainer className="flex items-center justify-center">
           <Link href="/blog">
-            <ButtonTextM>All Articles</ButtonTextM>
+            <a>
+              <ButtonTextM>All Articles</ButtonTextM>
+            </a>
           </Link>
         </AnimationContainer>
       </div>
