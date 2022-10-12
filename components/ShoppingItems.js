@@ -16,7 +16,7 @@ export const ShoppingItems = ({ special, cardSize }) => {
       staggerChildren={0.18}
       duration={0.1}
       amount={0.3}
-      className={`flex w-full flex-wrap justify-center sm:justify-between ${special}`}
+      className={`flex w-full flex-wrap justify-center gap-4 sm:justify-between sm:gap-0 ${special}`}
     >
       <Card2
         icon={<LaptopIcon />}

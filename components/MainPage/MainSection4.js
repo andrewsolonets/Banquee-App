@@ -12,7 +12,7 @@ export const MainSection4 = () => {
   return (
     <section className="flex flex-col items-center pt-40 font-medium text-black-txt ">
       <div className="flex flex-col items-start gap-16 ">
-        <div className="flex flex-col items-end justify-between md:flex-row">
+        <div className="flex flex-col items-end justify-between gap-4 md:flex-row md:gap-0">
           <div className="flex w-full flex-col items-center gap-4 md:w-1/2 md:items-start">
             <AnimationContainer>
               <h5 className="font-heading text-xl tracking-tight">
