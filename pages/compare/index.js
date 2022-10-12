@@ -1,9 +1,9 @@
 import { CardsCompare } from "../../components/CardStack";
-import { CtaMini } from "../../core/CTAMini";
 
 import { HeroCompare } from "../../components/compare/Hero";
 import { HeroSection } from "../../components/Hero";
 import { MainCompare } from "../../components/compare/MainCompare";
+import { CtaMini } from "../../core/CTAMini";
 
 const Compare = () => {
   return (
