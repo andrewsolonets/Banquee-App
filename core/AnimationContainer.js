@@ -1,4 +1,4 @@
-import { LazyMotion, domAnimation, m } from "framer-motion";
+import { motion } from "framer-motion";
 
 export const AnimationParentContainer = ({
   children,
@@ -44,17 +44,15 @@ export const AnimationParentContainer = ({
   };
 
   return (
-    <LazyMotion features={domAnimation}>
-      <m.div
-        className={className}
-        initial="offscreen"
-        whileInView="onscreen"
-        variants={direction === "x" ? parentX : parentY}
-        viewport={{ once: once, amount: amount }}
-      >
-        {children}
-      </m.div>
-    </LazyMotion>
+    <motion.div
+      className={className}
+      initial="offscreen"
+      whileInView="onscreen"
+      variants={direction === "x" ? parentX : parentY}
+      viewport={{ once: once, amount: amount }}
+    >
+      {children}
+    </motion.div>
   );
 };
 
@@ -93,14 +91,12 @@ export const AnimationChildContainer = ({
     },
   };
   return (
-    <LazyMotion features={domAnimation}>
-      <m.div
-        className={className}
-        variants={variant === "vertical" ? vertical : horizontal}
-      >
-        {children}
-      </m.div>
-    </LazyMotion>
+    <motion.div
+      className={className}
+      variants={variant === "vertical" ? vertical : horizontal}
+    >
+      {children}
+    </motion.div>
   );
 };
 
@@ -144,17 +140,15 @@ export const AnimationContainer = ({
   };
 
   return (
-    <LazyMotion features={domAnimation}>
-      <m.div
-        id={id}
-        className={className}
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: once, amount: amount }}
-        variants={variant === "vertical" ? vertical : horizontal}
-      >
-        {children}
-      </m.div>
-    </LazyMotion>
+    <motion.div
+      id={id}
+      className={className}
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: once, amount: amount }}
+      variants={variant === "vertical" ? vertical : horizontal}
+    >
+      {children}
+    </motion.div>
   );
 };
