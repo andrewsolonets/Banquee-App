@@ -1,6 +1,6 @@
 import SupportMobile from "../../assets/SupportMobile";
 import { CardsCompare } from "../../components/CardStack";
-import { CtaMini } from "../../core/CTAMini";
+import { CtaMini } from "../../core/CtaMini";
 import { HeroSection } from "../../components/Hero";
 import { MainSupport } from "../../components/support/MainSupport";
 
