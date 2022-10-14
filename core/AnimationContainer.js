@@ -116,7 +116,7 @@ export const AnimationContainer = ({
 }) => {
   const vertical = {
     offscreen: {
-      y: 70,
+      y: 30,
       opacity: 0,
     },
     onscreen: {
