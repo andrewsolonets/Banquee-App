@@ -6,7 +6,7 @@ import PlusIcon from "../../assets/PlusIcon";
 import { AnimationContainer } from "../../core/AnimationContainer";
 import { ButtonTextM } from "../../core/Button";
 import { Card2 } from "../../core/Card";
-import { ShoppingItems } from "../../components/ShoppingItems";
+import { ShoppingItems } from "../ShoppingItems";
 
 export const MainSection4 = () => {
   return (

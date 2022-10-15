@@ -1,6 +1,6 @@
 import { AnimationContainer } from "../../core/AnimationContainer";
 import { ButtonInvertM, ButtonM, ButtonTextM } from "../../core/Button";
-import { CardStack } from "../../components/CardStack";
+import { CardStack } from "../CardStack";
 
 export const PerfectCard = () => {
   return (

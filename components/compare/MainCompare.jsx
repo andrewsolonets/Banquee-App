@@ -2,7 +2,7 @@ import CardImage from "../../assets/Card";
 import Card1 from "../../assets/Card1";
 import ImageCard2 from "../../assets/Card2";
 import { AnimationContainer } from "../../core/AnimationContainer";
-import { ChooseCardItem } from "../../components/ChooseCardItem";
+import { ChooseCardItem } from "../ChooseCardItem";
 import { ComparingTable } from "../../core/ComparingTable";
 import {
   compareTable1,
