@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -25,8 +27,8 @@ module.exports = {
       grey: "#E8E8E8",
     },
     fontFamily: {
-      sans: ["Inter"],
-      heading: ["DM Sans", "sans-serif"],
+      sans: ["Inter", "sans-serif", ...defaultTheme.fontFamily.sans],
+      heading: ["DM Sans", "sans-serif", ...defaultTheme.fontFamily.sans],
     },
     extend: {},
   },
